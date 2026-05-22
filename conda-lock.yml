@@ -1631,25 +1631,25 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.22.11.00.18
+  version: 2026.05.22.15.16.27
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.11.00.18-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.15.16.27-hd8ed1ab_0.conda
   hash:
-    md5: ec755f594ee434317e050e0eea1bd1e5
-    sha256: 8cde3421c68b933f2fcbc64fa50f02186aac687f0fe43bd509c5e9509e1f96ba
+    md5: 20e869e1ff086b8cd1b0c82d6076d646
+    sha256: 113e96c264ff090acd582f3a3a6abbcb430b6960bc83339c082e960a937fa7e1
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.22.11.00.18
+  version: 2026.05.22.15.16.27
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.11.00.18-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.15.16.27-hd8ed1ab_0.conda
   hash:
-    md5: ec755f594ee434317e050e0eea1bd1e5
-    sha256: 8cde3421c68b933f2fcbc64fa50f02186aac687f0fe43bd509c5e9509e1f96ba
+    md5: 20e869e1ff086b8cd1b0c82d6076d646
+    sha256: 113e96c264ff090acd582f3a3a6abbcb430b6960bc83339c082e960a937fa7e1
   category: main
   optional: false
 - name: conda-index
@@ -10500,27 +10500,27 @@ package:
   category: main
   optional: false
 - name: trove-classifiers
-  version: 2026.5.20.19
+  version: 2026.5.22.10
   manager: conda
   platform: linux-64
   dependencies:
     python: '>=3.10'
-  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2026.5.20.19-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2026.5.22.10-pyhd8ed1ab_0.conda
   hash:
-    md5: 2297d03a5271358606df5e7b203918a0
-    sha256: 9e0dbd32946cf60df91f0b0a72925782c638d06d1eaed17ceb908396edd468a7
+    md5: c3c7a2791775db90b401cbb7b9f0790d
+    sha256: ee8a64518b866ae2258e70f00dda7c7ca9bfed323f0e102625bcb34f23353a13
   category: main
   optional: false
 - name: trove-classifiers
-  version: 2026.5.20.19
+  version: 2026.5.22.10
   manager: conda
   platform: osx-arm64
   dependencies:
     python: '>=3.10'
-  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2026.5.20.19-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2026.5.22.10-pyhd8ed1ab_0.conda
   hash:
-    md5: 2297d03a5271358606df5e7b203918a0
-    sha256: 9e0dbd32946cf60df91f0b0a72925782c638d06d1eaed17ceb908396edd468a7
+    md5: c3c7a2791775db90b401cbb7b9f0790d
+    sha256: ee8a64518b866ae2258e70f00dda7c7ca9bfed323f0e102625bcb34f23353a13
   category: main
   optional: false
 - name: truststore
