@@ -1631,25 +1631,25 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.22.00.02.48
+  version: 2026.05.22.05.29.06
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.00.02.48-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.05.29.06-hd8ed1ab_0.conda
   hash:
-    md5: 8bf7349a0f77dcfdcfaf26da683dce6b
-    sha256: 53ab0af2feac242e795c4d52d4e8547f903a513bd8dcd5ee51f064060b45f078
+    md5: ae3f5534843ba59f1ce36cdcfcdd9c57
+    sha256: 69bec62a3872f4cc2a8b79d40bf43036a3d355bea8c9a465455a29b05fc4706c
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.22.00.02.48
+  version: 2026.05.22.05.29.06
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.00.02.48-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.05.29.06-hd8ed1ab_0.conda
   hash:
-    md5: 8bf7349a0f77dcfdcfaf26da683dce6b
-    sha256: 53ab0af2feac242e795c4d52d4e8547f903a513bd8dcd5ee51f064060b45f078
+    md5: ae3f5534843ba59f1ce36cdcfcdd9c57
+    sha256: 69bec62a3872f4cc2a8b79d40bf43036a3d355bea8c9a465455a29b05fc4706c
   category: main
   optional: false
 - name: conda-index
@@ -10878,30 +10878,30 @@ package:
   category: main
   optional: false
 - name: uv
-  version: 0.11.15
+  version: 0.11.16
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
     libstdcxx: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-64/uv-0.11.15-h29f5ae7_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/uv-0.11.16-h29f5ae7_0.conda
   hash:
-    md5: 304db5db0410f549be4a197c369fe2d2
-    sha256: 292f2cc1c3460cf4f353ce4916dced289e51757af7f8b9d0a51cdf79b478278a
+    md5: 78f3a3467d6b3c06f4d128ea333e046a
+    sha256: 0105742813f9bc6aca2cbbeef09d3443c8eb8dd6a602f42f7b654750ddec93a9
   category: main
   optional: false
 - name: uv
-  version: 0.11.15
+  version: 0.11.16
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
     libcxx: '>=19'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.11.15-h2c65d96_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.11.16-h2c65d96_0.conda
   hash:
-    md5: 4b0e53ffbac2c4422e5b60210dbfc21f
-    sha256: a8b9bde431359794b6b21829c25c576114a9a5694936a92fa51c8e9449c0f426
+    md5: 27c9c89effaf61cc5a368623fcffcca5
+    sha256: 98c4c9d8f217006bc3e2ae1405a3e1de71b5d056a5a37c4dcc76359b640a42e8
   category: main
   optional: false
 - name: uvicorn
