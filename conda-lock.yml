@@ -1631,25 +1631,25 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.21.18.34.02
+  version: 2026.05.22.00.02.48
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.21.18.34.02-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.00.02.48-hd8ed1ab_0.conda
   hash:
-    md5: 21613449b5e9f57d5593b891e42333b8
-    sha256: 168246a920c3e51699a6799a7014a44849a1b894aec60eeac8cba056386768b1
+    md5: 8bf7349a0f77dcfdcfaf26da683dce6b
+    sha256: 53ab0af2feac242e795c4d52d4e8547f903a513bd8dcd5ee51f064060b45f078
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.21.18.34.02
+  version: 2026.05.22.00.02.48
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.21.18.34.02-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.22.00.02.48-hd8ed1ab_0.conda
   hash:
-    md5: 21613449b5e9f57d5593b891e42333b8
-    sha256: 168246a920c3e51699a6799a7014a44849a1b894aec60eeac8cba056386768b1
+    md5: 8bf7349a0f77dcfdcfaf26da683dce6b
+    sha256: 53ab0af2feac242e795c4d52d4e8547f903a513bd8dcd5ee51f064060b45f078
   category: main
   optional: false
 - name: conda-index
@@ -6198,28 +6198,28 @@ package:
   category: main
   optional: false
 - name: libuv
-  version: 1.51.0
+  version: 1.52.1
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.51.0-hb03c661_1.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.52.1-h280c20c_0.conda
   hash:
-    md5: 0f03292cc56bf91a077a134ea8747118
-    sha256: c180f4124a889ac343fc59d15558e93667d894a966ec6fdb61da1604481be26b
+    md5: 4e33d49bf4fc853855a3b00643aa5484
+    sha256: e28e4519223f78b3163599ca89c3f2d80bfb53e907e7fc74e806e60d1efa578b
   category: main
   optional: false
 - name: libuv
-  version: 1.51.0
+  version: 1.52.1
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.51.0-h6caf38d_1.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.52.1-h1a92334_0.conda
   hash:
-    md5: c0d87c3c8e075daf1daf6c31b53e8083
-    sha256: 042c7488ad97a5629ec0a991a8b2a3345599401ecc75ad6a5af73b60e6db9689
+    md5: fa9fef7d9f33724b7c3899c883c25a3e
+    sha256: e23176af832f637693ebbb9bbe7d29c0f4cba662dabd001081d2aa6fc9f7f661
   category: main
   optional: false
 - name: libwebp-base
@@ -8229,29 +8229,29 @@ package:
   category: main
   optional: false
 - name: pyjwt
-  version: 2.12.1
+  version: 2.13.0
   manager: conda
   platform: linux-64
   dependencies:
     python: ''
     typing_extensions: '>=4.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/pyjwt-2.12.1-pyhcf101f3_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/pyjwt-2.13.0-pyhcf101f3_0.conda
   hash:
-    md5: b27a9f4eca2925036e43542488d3a804
-    sha256: 4279ee4cf2533fd17910ae7373159d9bee2492d8c50932ddc74dd27a70b15de4
+    md5: edb808d7f7396478ab6e457e697b8ec5
+    sha256: 58cda7489477fecb859ec95bf73cba7e4634db1a517e29e0d3086d7ec71733ae
   category: main
   optional: false
 - name: pyjwt
-  version: 2.12.1
+  version: 2.13.0
   manager: conda
   platform: osx-arm64
   dependencies:
     python: ''
     typing_extensions: '>=4.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/pyjwt-2.12.1-pyhcf101f3_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/pyjwt-2.13.0-pyhcf101f3_0.conda
   hash:
-    md5: b27a9f4eca2925036e43542488d3a804
-    sha256: 4279ee4cf2533fd17910ae7373159d9bee2492d8c50932ddc74dd27a70b15de4
+    md5: edb808d7f7396478ab6e457e697b8ec5
+    sha256: 58cda7489477fecb859ec95bf73cba7e4634db1a517e29e0d3086d7ec71733ae
   category: main
   optional: false
 - name: pylev
