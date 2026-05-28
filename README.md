@@ -292,7 +292,7 @@ conda-forge-tick --help
 
 For debugging, use the `--debug` flag. This enables debug logging and disables multiprocessing.
 
-Note that the bot expects the [conda-forge dependency graph](https://github.com/conda-forge/autotick-bot-graph) to be
+Note that the bot expects the [conda-forge dependency graph](https://github.com/conda-forge/conda-forge-bot-data) to be
 present in the current working directory by default, unless the `--online` flag is used.
 
 > [!TIP]
@@ -323,23 +323,23 @@ As `conda-forge` grew, the "single job + global data access" model became increa
 
 In this section, we list the collection of jobs that comprise the bot. Each job touches a distinct part of the bot's data structure and is run in parallel with the other jobs. We have also specified the GitHub Actions workflow that runs each job. See those files for further details on which commands are run.
 
-**bot** / `bot-bot.yml`: The main job that runs the bot, making PRs to feedstocks, etc. This job writes data on the PRs it makes to `autotick-bot-graph/pr_info` and `autotick-bot-graph/version_pr_info`. It also writes new PR JSON blobs to `autotick-bot-graph/pr_json` for each PR to track their statuses on GitHub.
+**bot** / `bot-bot.yml`: The main job that runs the bot, making PRs to feedstocks, etc. This job writes data on the PRs it makes to `conda-forge-bot-data/pr_info` and `conda-forge-bot-data/version_pr_info`. It also writes new PR JSON blobs to `conda-forge-bot-data/pr_json` for each PR to track their statuses on GitHub.
 
-**feedstocks** / `bot-feedstocks.yml`: Updates the list of valid and archived feedstocks in `conda-forge` located at `autotick-bot-graph/all_feedstocks.json`.
+**feedstocks** / `bot-feedstocks.yml`: Updates the list of valid and archived feedstocks in `conda-forge` located at `conda-forge-bot-data/all_feedstocks.json`.
 
-**versions** / `bot-versions.yml`: Fetches the latest version for each feedstock in `conda-forge`, writing the data to `autotick-bot-graph/versions/`.
+**versions** / `bot-versions.yml`: Fetches the latest version for each feedstock in `conda-forge`, writing the data to `conda-forge-bot-data/versions/`.
 
-**prs** / `bot-prs.yml`: Fetches the latest PR statuses from GitHub for all of the PRs that bot has made, writing the data to`autotick-bot-graph/pr_json`.
+**prs** / `bot-prs.yml`: Fetches the latest PR statuses from GitHub for all of the PRs that bot has made, writing the data to`conda-forge-bot-data/pr_json`.
 
-**pypi-mapping** / `bot-pypi-mapping.yml`: Builds a mapping of packages between PyPI and `conda-forge`, and a mapping of python imports to packages using the bot's metadata. The PyPI mapping is written to `autotick-bot-graph/mappings` and the import mapping is written to `autotick-bot-graph/import_to_pkg_maps`. This job also generates some internal data stored at `autotick-bot-graph/ranked_hubs_authorities.json`.
+**pypi-mapping** / `bot-pypi-mapping.yml`: Builds a mapping of packages between PyPI and `conda-forge`, and a mapping of python imports to packages using the bot's metadata. The PyPI mapping is written to `conda-forge-bot-data/mappings` and the import mapping is written to `conda-forge-bot-data/import_to_pkg_maps`. This job also generates some internal data stored at `conda-forge-bot-data/ranked_hubs_authorities.json`.
 
-**make-graph** / `bot-make-graph.yml`: Builds the `conda-forge` dependency graph from the feedstocks in `autotick-bot-graph/all_feedstocks.json`. The graph is written to `autotick-bot-graph/graph.json` and specific attributes for each node are written to `autotick-bot-graph/node_attrs`. This job also performs some schema migrations and might add new files to `autotick-bot-graph/pr_info` and `autotick-bot-graph/version_pr_info`.
+**make-graph** / `bot-make-graph.yml`: Builds the `conda-forge` dependency graph from the feedstocks in `conda-forge-bot-data/all_feedstocks.json`. The graph is written to `conda-forge-bot-data/graph.json` and specific attributes for each node are written to `conda-forge-bot-data/node_attrs`. This job also performs some schema migrations and might add new files to `conda-forge-bot-data/pr_info` and `conda-forge-bot-data/version_pr_info`.
 
-**make-migrators** / `bot-make-migrators.yml`: Builds the migrations the bot will run, writing them as JSON to `autotick-bot-graph/migrators`.
+**make-migrators** / `bot-make-migrators.yml`: Builds the migrations the bot will run, writing them as JSON to `conda-forge-bot-data/migrators`.
 
-**update-status-page** / `bot-update-status-page.yml`: Updates the status page at `conda-forge.org/status` with the latest migration information. The status data is written to `autotick-bot-graph/status`.
+**update-status-page** / `bot-update-status-page.yml`: Updates the status page at `conda-forge.org/status` with the latest migration information. The status data is written to `conda-forge-bot-data/status`.
 
-**[NOT CURRENTLY USED] cache** / `bot-cache.yml`: Caches the data in `autotick-bot-graph` to GitHub Actions.
+**[NOT CURRENTLY USED] cache** / `bot-cache.yml`: Caches the data in `conda-forge-bot-data` to GitHub Actions.
 
 **keepalive** / `bot-keepalive.yml`: This job runs every 15 minutes and ensures that the bot is still running. If the bot is not running, it will restart it.
 
@@ -348,16 +348,16 @@ Many of these jobs could be converted to a more event-driven model, especially t
 ### Using the `conda_forge_tick` Module to Interact with the Bot Data
 
 The next few sections provide information about how to use the `conda_forge_tick` package to
-interact with the `autotick-bot-graph` repo.
+interact with the `conda-forge-bot-data` repo.
 
-You will need a copy of `conda-forge/autotick-bot-graph` and need to be at the root level of the `autotick-bot-graph` repo
+You will need a copy of `conda-forge/conda-forge-bot-data` and need to be at the root level of the `conda-forge-bot-data` repo
 for these code snippets to work properly. You can clone the repo with the following command:
 
 ```bash
-git clone --depth=1 https://github.com/conda-forge/autotick-bot-graph.git
+git clone --depth=1 https://github.com/conda-forge/conda-forge-bot-data.git
 ```
 
-The `autotick-bot-graph` repo also has a [notebook](https://github.com/conda-forge/autotick-bot-graph/blob/main/example.ipynb) with some code examples.
+The `conda-forge-bot-data` repo also has a [notebook](https://github.com/conda-forge/conda-forge-bot-data/blob/main/example.ipynb) with some code examples.
 
 #### Loading the graph
 
@@ -405,7 +405,7 @@ See the [run_bot_task.py](docker/run_bot_task.py) script for more information.
 
 ### Data Model
 
-The bot uses the [conda-forge dependency graph](https://github.com/conda-forge/autotick-bot-graph) to remember metadata
+The bot uses the [conda-forge dependency graph](https://github.com/conda-forge/conda-forge-bot-data) to remember metadata
 about feedstocks, their versions, and their dependencies. Some of the information
 (e.g. the contents of `recipe/meta.yaml` file of the corresponding feedstock) is redundant but stored in the
 graph for performance reasons. In an attempt to document the data model, we have created a
@@ -423,9 +423,9 @@ ideal.
 
 The backend(s) can be set by using the `CF_TICK_GRAPH_DATA_BACKENDS` environment variable to a colon-separated list of backends (e.g., `export CF_TICK_GRAPH_DATA_BACKENDS=file:mongodb`). The possible backends are:
 
-- `file` (default): Use the local file system to store data. In order to properly use this backend, you must clone the `conda-forge/autotick-bot-graph` repository and run the bot from `conda-forge/autotick-bot-graph`'s root directory. You can use the `deploy` command from the bot CLI to commit any changes and push them to the remote repository.
+- `file` (default): Use the local file system to store data. In order to properly use this backend, you must clone the `conda-forge/conda-forge-bot-data` repository and run the bot from `conda-forge/conda-forge-bot-data`'s root directory. You can use the `deploy` command from the bot CLI to commit any changes and push them to the remote repository.
 - `mongodb`: Use a MongoDB database to store data. In order to use this backend, you need to set the `MONGODB_CONNECTION_STRING` environment variable to the connection string of the MongoDB database you want to use. **WARNING: The bot will typically read almost all of its data in the backend during its runs, so be careful when using this backend without a pre-cached local copy of the data.**
-- `github`: Read-only backend that uses the `conda-forge/autotick-bot-graph` repository as a data source. This backend reads data on-the-fly using GitHub's "raw" URLs (e.g, `https://raw.githubusercontent.com/conda-forge/autotick-bot-graph/main/all_feedstocks.json`). This backend is ideal for debugging when you only want to touch a fraction of the data.
+- `github`: Read-only backend that uses the `conda-forge/conda-forge-bot-data` repository as a data source. This backend reads data on-the-fly using GitHub's "raw" URLs (e.g, `https://raw.githubusercontent.com/conda-forge/conda-forge-bot-data/main/all_feedstocks.json`). This backend is ideal for debugging when you only want to touch a fraction of the data.
 
 The bot uses the first backend in the list as the primary backend and syncs any changed data to the other backends as needed. The bot will also cache data to disk upon first use to speed up subsequent reads. To turn off this caching, set the `CF_TICK_GRAPH_DATA_USE_FILE_CACHE` environment variable to `false`.
 
