@@ -1633,25 +1633,25 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.29.06.31.26
+  version: 2026.05.29.11.30.23
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.29.06.31.26-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.29.11.30.23-hd8ed1ab_0.conda
   hash:
-    md5: ff7fdced67a5d115885bcbd5e796ee68
-    sha256: d6bdd1acda213f9e2182e6db4ef233cb6e9208501308a78357e285115ef41a75
+    md5: ca06285ba9b167758fb684f79bb151cc
+    sha256: 0adb0b2528d8bc72a7ed90698e91dcb19e804505bef05a9332e53787b7bbee25
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.05.29.06.31.26
+  version: 2026.05.29.11.30.23
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.29.06.31.26-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.05.29.11.30.23-hd8ed1ab_0.conda
   hash:
-    md5: ff7fdced67a5d115885bcbd5e796ee68
-    sha256: d6bdd1acda213f9e2182e6db4ef233cb6e9208501308a78357e285115ef41a75
+    md5: ca06285ba9b167758fb684f79bb151cc
+    sha256: 0adb0b2528d8bc72a7ed90698e91dcb19e804505bef05a9332e53787b7bbee25
   category: main
   optional: false
 - name: conda-index
@@ -6015,7 +6015,7 @@ package:
   category: main
   optional: false
 - name: libsolv
-  version: 0.7.38
+  version: 0.7.39
   manager: conda
   platform: linux-64
   dependencies:
@@ -6023,24 +6023,24 @@ package:
     libgcc: '>=14'
     libstdcxx: '>=14'
     libzlib: '>=1.3.2,<2.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libsolv-0.7.38-h9463b59_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libsolv-0.7.39-h9463b59_0.conda
   hash:
-    md5: aa86c6fd9046616d6e1af6c316c7d61f
-    sha256: 3a033e6e0ef90c33d32bbc8e9742e5e2cc26e6eb32905484b5c6012d23b619ae
+    md5: 3a1136dda53febf7693145db51db3dcb
+    sha256: 65e49d51607307ca47542de815ef9d1698cfd067350e03d3d82fde61ba5ecf6f
   category: main
   optional: false
 - name: libsolv
-  version: 0.7.38
+  version: 0.7.39
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
     libcxx: '>=19'
     libzlib: '>=1.3.2,<2.0a0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/libsolv-0.7.38-h7d962ec_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/libsolv-0.7.39-h7d962ec_0.conda
   hash:
-    md5: 0e723329c60e8fa5c64f89bd57361af6
-    sha256: 183160237197a3983778f6a77c4bb30ce7affffcf9461b0782904bfd2fae936e
+    md5: 8d5409cf10e54f495099b2fda7d06306
+    sha256: c5095231ffdc793bc46f191c0e072db5da220802433de548e882ab7d098a0496
   category: main
   optional: false
 - name: libsqlite
