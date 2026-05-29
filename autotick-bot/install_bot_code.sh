@@ -18,7 +18,7 @@ git config --global pull.rebase false
 # we pin everything now so no need to update this
 # conda update conda-forge-pinning --yes
 
-cd cf-scripts
+cd conda-forge-bot
 
 pip install --no-deps --no-build-isolation -e .
 
@@ -49,7 +49,7 @@ else
   echo "Skipping cloning of cf-graph"
 fi
 
-docker_name=${CF_FEEDSTOCK_OPS_CONTAINER_NAME:-"ghcr.io/regro/conda-forge-tick"}
+docker_name=${CF_FEEDSTOCK_OPS_CONTAINER_NAME:-"quay.io/condaforge/conda-forge-tick"}
 bot_tag=$(python -c "import conda_forge_tick; print(conda_forge_tick.__version__)")
 docker_tag=${CF_FEEDSTOCK_OPS_CONTAINER_TAG:-${bot_tag}}
 

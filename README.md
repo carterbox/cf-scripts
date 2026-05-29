@@ -1,20 +1,20 @@
-# autotick-bot
+# conda-forge-bot
 
-[![tests](https://github.com/regro/cf-scripts/actions/workflows/tests.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/tests.yml)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/regro/cf-scripts/main.svg)](https://results.pre-commit.ci/latest/github/regro/cf-scripts/main)
-[![relock](https://github.com/regro/cf-scripts/actions/workflows/relock.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/relock.yml)
-[![bot-bot](https://github.com/regro/cf-scripts/actions/workflows/bot-bot.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-bot.yml)
-[![bot-keepalive](https://github.com/regro/cf-scripts/actions/workflows/bot-keepalive.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-keepalive.yml)
-[![bot-update-status-page](https://github.com/regro/cf-scripts/actions/workflows/bot-update-status-page.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-update-status-page.yml)
-[![bot-pypi-mapping](https://github.com/regro/cf-scripts/actions/workflows/bot-pypi-mapping.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-pypi-mapping.yml)
-[![bot-versions](https://github.com/regro/cf-scripts/actions/workflows/bot-versions.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-versions.yml)
-[![bot-prs](https://github.com/regro/cf-scripts/actions/workflows/bot-prs.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-prs.yml)
-[![bot-feedstocks](https://github.com/regro/cf-scripts/actions/workflows/bot-feedstocks.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-feedstocks.yml)
-[![bot-make-graph](https://github.com/regro/cf-scripts/actions/workflows/bot-make-graph.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-make-graph.yml)
-[![bot-update-nodes](https://github.com/regro/cf-scripts/actions/workflows/bot-update-nodes.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-update-nodes.yml)
-[![bot-make-migrators](https://github.com/regro/cf-scripts/actions/workflows/bot-make-migrators.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-make-migrators.yml)
-[![bot-cache](https://github.com/regro/cf-scripts/actions/workflows/bot-cache.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/bot-cache.yml)
-[![test-model](https://github.com/regro/cf-scripts/actions/workflows/test-model.yml/badge.svg)](https://github.com/regro/cf-scripts/actions/workflows/test-model.yml)
+[![tests](https://github.com/conda-forge/conda-forge-bot/actions/workflows/tests.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/tests.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/conda-forge/conda-forge-bot/main.svg)](https://results.pre-commit.ci/latest/github/conda-forge/conda-forge-bot/main)
+[![relock](https://github.com/conda-forge/conda-forge-bot/actions/workflows/relock.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/relock.yml)
+[![bot-bot](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-bot.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-bot.yml)
+[![bot-keepalive](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-keepalive.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-keepalive.yml)
+[![bot-update-status-page](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-update-status-page.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-update-status-page.yml)
+[![bot-pypi-mapping](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-pypi-mapping.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-pypi-mapping.yml)
+[![bot-versions](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-versions.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-versions.yml)
+[![bot-prs](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-prs.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-prs.yml)
+[![bot-feedstocks](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-feedstocks.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-feedstocks.yml)
+[![bot-make-graph](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-make-graph.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-make-graph.yml)
+[![bot-update-nodes](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-update-nodes.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-update-nodes.yml)
+[![bot-make-migrators](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-make-migrators.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-make-migrators.yml)
+[![bot-cache](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-cache.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/bot-cache.yml)
+[![test-model](https://github.com/conda-forge/conda-forge-bot/actions/workflows/test-model.yml/badge.svg)](https://github.com/conda-forge/conda-forge-bot/actions/workflows/test-model.yml)
 
 
 the actual bot in an actual place doing an actual thing
@@ -31,7 +31,7 @@ the actual bot in an actual place doing an actual thing
 Check out the following pages for status information on the bot:
 
 - [PRs](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+author%3Aregro-cf-autotick-bot+archived%3Afalse+)
-- [running jobs](https://github.com/regro/cf-scripts/actions?query=is%3Ain_progress++)
+- [running jobs](https://github.com/conda-forge/conda-forge-bot/actions?query=is%3Ain_progress++)
 - [status page](https://conda-forge.org/status/#current_migrations)
 
 ## Starting and Stopping the Worker
@@ -237,7 +237,7 @@ If your migrator needs special configuration, you should write a new factory fun
 - `RUN_URL`: set to the URL of the CI build (now set to a GHA run URL)
 - `MEMORY_LIMIT_GB`: set to the memory limit in GB for the bot
 - `BOT_TOKEN`: a GitHub token for the bot user
-- `CF_FEEDSTOCK_OPS_CONTAINER_NAME`: the name of the container to use in the bot, otherwise defaults to `ghcr.io/regro/conda-forge-tick`
+- `CF_FEEDSTOCK_OPS_CONTAINER_NAME`: the name of the container to use in the bot, otherwise defaults to `quay.io/condaforge/conda-forge-tick`
 - `CF_FEEDSTOCK_OPS_CONTAINER_TAG`: set this to override the default container tag used in production runs, otherwise the value of `__version__` is used
 - `CF_TICK_USE_LOCAL_PINNINGS`: set to `true` to force the bot to always use the local copy of the pinnings file for rerenders, set during integration testing
 
@@ -247,9 +247,9 @@ Additional environment variables are described in [the settings module](conda_fo
 
 The bot has an abstract set of requirements stored in the `environment.yml` file in this repo.
 
-It's production environment is locked via `conda-lock`. The lockfile is stored in `cf-scripts`
-at [https://github.com/regro/cf-scripts/blob/main/conda-lock.yml](https://github.com/regro/cf-scripts/blob/main/conda-lock.yml).
-The production environment is relocked regularly using a GitHub Actions [job](https://github.com/regro/cf-scripts/actions/workflows/relock.yaml).
+It's production environment is locked via `conda-lock`. The lockfile is stored in `conda-forge-bot`
+at [https://github.com/conda-forge/conda-forge-bot/blob/main/conda-lock.yml](https://github.com/conda-forge/conda-forge-bot/blob/main/conda-lock.yml).
+The production environment is relocked regularly using a GitHub Actions [job](https://github.com/conda-forge/conda-forge-bot/actions/workflows/relock.yaml).
 
 There are two ways to get a working environment:
 
@@ -257,7 +257,7 @@ There are two ways to get a working environment:
 2. Download the lockfile and use `conda-lock`. The best way to download the lockfile is via `wget` or `curl` or similar:
 
    ```bash
-   wget https://raw.githubusercontent.com/regro/cf-scripts/main/conda-lock.yml
+   wget https://raw.githubusercontent.com/conda-forge/conda-forge-bot/main/conda-lock.yml
    ```
 
 ### Running Tests
@@ -394,11 +394,11 @@ This is an important number to know when proposing a migration
 ### `conda-forge-tick` Container Image and Dockerfile
 
 The bot relies on a container image to run certain tasks. The image is built from the `Dockerfile` in the root of
-this repository and hosted via `ghcr.io`. The `__version__` tag is used for production jobs and updated automatically
+this repository and hosted via `quay.io`. The `__version__` tag is used for production jobs and updated automatically
 when PRs are merged. The container is typically run via
 
 ```bash
-docker run --rm -t conda-forge-tick:<__version__> python /opt/autotick-bot/docker/run_bot_task.py <task> <args>
+docker run --rm -t conda-forge-tick:<__version__> python /opt/conda-forge-bot/docker/run_bot_task.py <task> <args>
 ```
 
 See the [run_bot_task.py](docker/run_bot_task.py) script for more information.
