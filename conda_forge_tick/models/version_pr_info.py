@@ -30,10 +30,12 @@ class VersionPrInfo(StrictBaseModel):
     attempt to make the version PR.
     """
 
-    new_version_errors: NoneIsEmptyDict[str, str] = {}
+    new_version_errors: NoneIsEmptyDict[str, dict[str, str | list[str]]] = {}
     """
-    Mapping (version -> error message) to describe the errors that occurred when trying to update the versions in the
-    PR.
+    Mapping (version -> error payload) to describe the errors that occurred when trying to update the versions in the
+    PR. The error payload is backed up by the `conda_forge_tick.auto_tick._BotJobError` dataclass.
+
+    Previous iterations of the model only included a preformatted string with the error details.
     """
 
     @model_validator(mode="after")

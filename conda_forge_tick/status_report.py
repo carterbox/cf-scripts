@@ -38,6 +38,7 @@ from conda_forge_tick.utils import (
     frozen_to_json_friendly,
     load_existing_graph,
     pr_can_be_archived,
+    sanitize_string,
 )
 from conda_forge_tick.version_filters import filter_version
 
@@ -83,9 +84,9 @@ def _ok_version(ver):
 
 def write_version_migrator_status(migrator, mctx):
     """Write the status of the version migrator."""
-    out: dict[str, dict[str, str]] = {
+    out: dict[str, dict[str, str | list[str]]] = {
         "queued": {},  # name -> pending version
-        "errors": {},  # name -> error
+        "errors": {},  # name -> structured data about errors
     }
 
     gx = mctx.graph
@@ -141,27 +142,27 @@ def write_version_migrator_status(migrator, mctx):
                     if attempts == 0:
                         out["queued"][node] = new_version  # type: ignore[assignment]
                     else:
-                        out["errors"][node] = f"{attempts:.2f} attempts - " + vpri.get(
-                            "new_version_errors",
-                            {},
-                        ).get(
+                        previous_payload = vpri.get("new_version_errors", {}).get(
                             new_version,
-                            "No error information available for version '%s'."
-                            % new_version,
+                            {
+                                # Follows schema in .autotick._BotJobError
+                                "kind": "bot-error",
+                                "messages": [
+                                    f"No error information available for version '{new_version}'"
+                                ],
+                            },
                         )
-
-    with open("./status/version_status.json", "wb") as f:
-        old_out: dict[str, dict[str, str] | set[str]] = {}
-        old_out.update(out)
-        old_out["queued"] = set(out["queued"].keys())
-        old_out["errored"] = set(out["errors"].keys())
-        f.write(
-            orjson.dumps(
-                old_out,
-                option=orjson.OPT_SORT_KEYS | orjson.OPT_INDENT_2,
-                default=_sorted_set_json,
-            )
-        )
+                        # FUTURE: Remove once all JSON documents have migrated from str to dict
+                        if isinstance(previous_payload, str):
+                            previous_payload = {
+                                "kind": "plain",
+                                "messages": [sanitize_string(previous_payload)],
+                            }
+                        out["errors"][node] = {
+                            # type: ignore
+                            **previous_payload,
+                            "attempts": attempts,
+                        }
 
     with open("./status/version_status.v2.json", "wb") as f:
         f.write(
@@ -262,19 +263,23 @@ def graph_migrator_status(
             fc = "#440154"
             fntc = "white"
         elif pr_json is None:
+            pre_pr_migrator_status = (
+                attrs.get("pr_info", {}).get("pre_pr_migrator_status", {})
+            ).get(migrator_name, {})
+            if isinstance(pre_pr_migrator_status, str):
+                if "not solvable" in pre_pr_migrator_status:
+                    kind = "not-solvable"
+                elif "bot error" in pre_pr_migrator_status:
+                    kind = "bot-error"
+                else:
+                    kind = None
+            else:
+                kind = pre_pr_migrator_status.get("kind")
             if buildable:
-                if "not solvable" in (
-                    attrs.get("pr_info", {})
-                    .get("pre_pr_migrator_status", {})
-                    .get(migrator_name, "")
-                ):
+                if kind == "not-solvable":
                     out["not-solvable"].add(node)
                     fc = "#ff8c00"
-                elif "bot error" in (
-                    attrs.get("pr_info", {})
-                    .get("pre_pr_migrator_status", {})
-                    .get(migrator_name, "")
-                ) or attrs.get("parsing_error", ""):
+                elif kind == "bot-error" or attrs.get("parsing_error", ""):
                     out["bot-error"].add(node)
                     fc = "#000000"
                     fntc = "white"
@@ -282,11 +287,7 @@ def graph_migrator_status(
                     out["awaiting-pr"].add(node)
                     fc = "#35b779"
             else:
-                if "bot error" in (
-                    attrs.get("pr_info", {})
-                    .get("pre_pr_migrator_status", {})
-                    .get(migrator_name, "")
-                ) or attrs.get("parsing_error", ""):
+                if kind == "bot-error" or attrs.get("parsing_error", ""):
                     out["bot-error"].add(node)
                     fc = "#000000"
                     fntc = "white"
@@ -334,16 +335,23 @@ def graph_migrator_status(
             if not gx2[k].get("payload", {}).get("archived", False)
         ]
         if node in out["not-solvable"] or node in out["bot-error"]:
-            node_metadata["pre_pr_migrator_status"] = (
+            previous_status = (
                 attrs.get("pr_info", {})
                 .get(
                     "pre_pr_migrator_status",
                     {},
                 )
-                .get(migrator_name, "")
-            ) or attrs.get("parsing_error", "")
+                .get(migrator_name, {})
+            ) or {"kind": "bot-error", "messages": [attrs.get("parsing_error", "")]}
+            # FUTURE: Remove once all JSON documents have migrated from str to dict
+            if isinstance(previous_status, str):
+                previous_status = {
+                    "kind": "plain",
+                    "messages": [sanitize_string(previous_status)],
+                }
+            node_metadata["pre_pr_migrator_status"] = previous_status
         else:
-            node_metadata["pre_pr_migrator_status"] = ""
+            node_metadata["pre_pr_migrator_status"] = {}
 
         if pr_json and "PR" in pr_json:
             # I needed to fake some PRs they don't have html_urls though

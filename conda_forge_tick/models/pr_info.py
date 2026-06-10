@@ -248,11 +248,15 @@ class PrInfoValid(StrictBaseModel):
     The Azure token errors should be removed from the graph, e.g. by parsing the model and re-serializing it.
     """
 
-    pre_pr_migrator_status: NoneIsEmptyDict[str, str] = {}
+    pre_pr_migrator_status: NoneIsEmptyDict[str, dict[str, str | list[str]]] = {}
     """
-    A dictionary (migration name -> error message) of the error status of the migrations.
+    A dictionary (migration name -> error payload) of the error status of the migrations.
     Errors are added here if a non-version migration fails before a migration PR is created.
-    This field can contain HTML tags, which are probably intended for the status page.
+
+    This field contains structured data as the value, precisely to avoid having to send HTML strings.
+    These are meant to be handled by the frontend to target whatever style they see fit. The
+    dataclass backing these values can be found at `conda_forge_tick.auto_tick._BotJobError`.
+    Previous iterations of the schema only included a preformatted string.
 
     The same thing for version migrations is part of the `version_pr_info` object.
 

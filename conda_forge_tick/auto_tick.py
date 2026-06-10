@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import gc
 import glob
 import logging
@@ -6,7 +8,7 @@ import textwrap
 import time
 import traceback
 import typing
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import Any, Literal, cast
 from urllib.error import URLError
 from uuid import uuid4
@@ -79,21 +81,21 @@ logger = logging.getLogger(__name__)
 TIMEOUT = int(os.environ.get("TIMEOUT", 600))
 
 
-def _set_pre_pr_migrator_error(attrs, migrator_name, error_str, *, is_version):
+def _set_pre_pr_migrator_error(
+    attrs,
+    migrator_name,
+    error_payload: _BotJobError,
+    *,
+    is_version,
+):
     if is_version:
         with attrs["version_pr_info"] as vpri:
             version = vpri["new_version"]
-            if "new_version_errors" not in vpri:
-                vpri["new_version_errors"] = {}
-            vpri["new_version_errors"][version] = sanitize_string(error_str)
+            vpri.setdefault("new_version_errors", {})[version] = asdict(error_payload)
     else:
-        pre_key = "pre_pr_migrator_status"
-
         with attrs["pr_info"] as pri:
-            if pre_key not in pri:
-                pri[pre_key] = {}
-            pri[pre_key][migrator_name] = sanitize_string(
-                error_str,
+            pri.setdefault("pre_pr_migrator_status", {})[migrator_name] = asdict(
+                error_payload
             )
 
 
@@ -285,6 +287,29 @@ class _RerenderInfo:
     """
 
 
+@dataclass(kw_only=True)
+class _BotJobError:
+    """
+    Details about errors handled by the job and reported to status JSON.
+
+    Messages are sanitized on instantiation
+    """
+
+    kind: Literal["not-solvable", "bot-error"]
+    "Type of error"
+    messages: list[str]
+    "List of error messages, plain text"
+    url: str | None = None
+    "URL pointing to the job that resulted in this error, if any"
+    base_branch: str | None = None
+    "Feedstock branch where the bot is running on, if applicable"
+
+    def __post_init__(self):
+        self.messages = [sanitize_string(msg) for msg in self.messages]
+        if self.base_branch:
+            self.base_branch = sanitize_string(self.base_branch)
+
+
 def _run_rerender(
     git_cli: GitCli, context: ClonedFeedstockContext, suppress_errors: bool = False
 ) -> _RerenderInfo:
@@ -409,23 +434,16 @@ def _handle_solvability_error(
 ) -> None:
     ci_url = get_bot_run_url()
     ci_url = f"(<a href='{ci_url}'>bot CI job</a>)" if ci_url else ""
-    _solver_err_str = textwrap.dedent(
-        f"""
-        not solvable {ci_url} @ {base_branch}
-        <details>
-        <div align="left">
-        <pre>
-        {"</pre><pre>".join(sorted(set(errors)))}
-        </pre>
-        </div>
-        </details>
-        """,
-    ).strip()
 
     _set_pre_pr_migrator_error(
         context.attrs,
         migrator.report_name,
-        _solver_err_str,
+        _BotJobError(
+            kind="not-solvable",
+            url=ci_url,
+            base_branch=base_branch,
+            messages=sorted(set(errors)),
+        ),
         is_version=isinstance(migrator, Version),
     )
 
@@ -890,34 +908,31 @@ def _run_migrator_on_feedstock_branch(
         _set_pre_pr_migrator_error(
             attrs,
             migrator_name,
-            str(
-                e
-            ),  # we do not use any HTML formats here since at one point status page had them
+            _BotJobError(kind="bot-error", messages=[str(e)]),
             is_version=is_version,
         )
 
     except URLError as e:
         logger.exception("URLError ERROR", exc_info=e)
+        formatted_traceback = str(traceback.format_exc())
         with attrs["pr_info"] as pri:
             pri["bad"] = {
                 "exception": str(e),
-                "traceback": str(traceback.format_exc()).split(
+                "traceback": formatted_traceback.split(
                     "\n",
                 ),
                 "code": getattr(e, "code"),
                 "url": getattr(e, "url"),
             }
-
+        _job_url = get_bot_run_url()
         _set_pre_pr_migrator_error(
             attrs,
             migrator_name,
-            sanitize_string(
-                "bot error (%s): %s: %s"
-                % (
-                    '<a href="' + get_bot_run_url() + '">bot CI job</a>',
-                    base_branch,
-                    str(traceback.format_exc()),
-                ),
+            _BotJobError(
+                kind="bot-error",
+                url=_job_url,
+                base_branch=base_branch,
+                messages=[formatted_traceback],
             ),
             is_version=is_version,
         )
@@ -947,17 +962,15 @@ def _run_migrator_on_feedstock_branch(
                         "\n",
                     ),
                 }
-
+        _bot_run_url = get_bot_run_url()
         _set_pre_pr_migrator_error(
             attrs,
             migrator_name,
-            sanitize_string(
-                "bot error (%s): %s:\n%s"
-                % (
-                    '<a href="' + get_bot_run_url() + '">bot CI job</a>',
-                    base_branch,
-                    _err_tb,
-                ),
+            _BotJobError(
+                kind="bot-error",
+                url=_bot_run_url,
+                base_branch=base_branch,
+                messages=[_err_tb],
             ),
             is_version=is_version,
         )
