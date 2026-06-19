@@ -39,7 +39,8 @@ def _filter_excluded_deps(graph, excluded_dependencies):
     """
     nodes_to_remove = set(excluded_dependencies)
     for excluded_dep in excluded_dependencies:
-        nodes_to_remove |= set(nx.descendants(graph, excluded_dep))
+        if excluded_dep in graph.nodes:
+            nodes_to_remove |= set(nx.descendants(graph, excluded_dep))
     for node in nodes_to_remove:
         pluck(graph, node)
     # post-plucking cleanup
