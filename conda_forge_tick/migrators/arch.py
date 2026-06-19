@@ -437,6 +437,7 @@ class WinArm64(_CrossCompileRebuild):
     build_platform = {"win_arm64": "win_64"}
     pkg_list_filename = "win_arm64.txt"
     arches = {"win_arm64": "win_64"}
+    excluded_dependencies = {"r-languageserver"}
 
     def __init__(self, *args, **kwargs):
         kwargs.setdefault("name", "support windows arm64 platform")
