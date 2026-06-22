@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.13.02.11
+  version: 2026.06.22.17.11.44
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.13.02.11-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.17.11.44-hd8ed1ab_0.conda
   hash:
-    md5: 543ac8eff9cc8f144144622f1889fd55
-    sha256: c5a14af2f81d5839d404893dca7a486cac8600fe81a79c93bf421c3b651088ef
+    md5: e31b6ba327399e0add375cbbbcf6dae9
+    sha256: f7328674fec97224cf85efcc5bbecd4915c7337429f0514195626ae65cfd6d04
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.13.02.11
+  version: 2026.06.22.17.11.44
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.13.02.11-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.17.11.44-hd8ed1ab_0.conda
   hash:
-    md5: 543ac8eff9cc8f144144622f1889fd55
-    sha256: c5a14af2f81d5839d404893dca7a486cac8600fe81a79c93bf421c3b651088ef
+    md5: e31b6ba327399e0add375cbbbcf6dae9
+    sha256: f7328674fec97224cf85efcc5bbecd4915c7337429f0514195626ae65cfd6d04
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.13.02.11
+  version: 2026.06.22.17.11.44
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.13.02.11-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.17.11.44-hd8ed1ab_0.conda
   hash:
-    md5: 543ac8eff9cc8f144144622f1889fd55
-    sha256: c5a14af2f81d5839d404893dca7a486cac8600fe81a79c93bf421c3b651088ef
+    md5: e31b6ba327399e0add375cbbbcf6dae9
+    sha256: f7328674fec97224cf85efcc5bbecd4915c7337429f0514195626ae65cfd6d04
   category: main
   optional: false
 - name: conda-index
@@ -11938,7 +11938,7 @@ package:
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.66.1
+  version: 0.67.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -11948,14 +11948,14 @@ package:
     libgcc: '>=14'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/linux-64/py-rattler-build-0.66.1-py310hb823017_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/py-rattler-build-0.67.0-py310hb823017_0.conda
   hash:
-    md5: 3c3b0ce183e9358d8391ab550265c9b9
-    sha256: 1fe25aa2c4ae8551695673858792439131b3ad729f8719866cce9568ec147637
+    md5: 35644029c341cbf5d2bf7bf0875c77e2
+    sha256: 1f5061df8a7bc853ed7ead84063e75adc2211351ee9ad48983c38076207493e3
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.66.1
+  version: 0.67.0
   manager: conda
   platform: linux-aarch64
   dependencies:
@@ -11964,14 +11964,14 @@ package:
     libgcc: '>=14'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/py-rattler-build-0.66.1-py310h160093b_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/py-rattler-build-0.67.0-py310h160093b_0.conda
   hash:
-    md5: 082f170dde834bfec2d1d35c3bab4e45
-    sha256: 5771b0a2fc889a946699a0ccbf15693abb48d8df76403f902a3df0f45ebc6fa8
+    md5: 8a76c5e55b193a9fc67e119495761991
+    sha256: 383060e3f7efcb3c473e7b647b579a7c3474ef8902bd1fd83333ff49db8a2c40
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.66.1
+  version: 0.67.0
   manager: conda
   platform: osx-arm64
   dependencies:
@@ -11980,10 +11980,10 @@ package:
     cpython: '>=3.10'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/py-rattler-build-0.66.1-py310he76dbf2_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/py-rattler-build-0.67.0-py310he76dbf2_0.conda
   hash:
-    md5: 502d172a7a2368217ede783d90bcbfd5
-    sha256: 1da593703876569b909bb12f3ecd27f39443fd8ddcec8a9179867138823c3406
+    md5: 02ce6af3af6dbda87b75064513cbb28c
+    sha256: 5e17755cd1fac8fb5f0ed269de313eaeb6a440565023adac74026cc026a42a59
   category: main
   optional: false
 - name: pyasn1
