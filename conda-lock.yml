@@ -2405,44 +2405,43 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.23.12.09.05
+  version: 2026.06.23.18.28.43
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.12.09.05-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.18.28.43-hd8ed1ab_0.conda
   hash:
-    md5: 885f791054f23529c7acd2c1adaa0558
-    sha256: 2cf31b221d1071ac71e1f51e0b8c9dc4ae6820ef41c2ee2b0048564e6676230c
+    md5: 3a188aac28c3a327ea7cb329cb758e26
+    sha256: 21d69ff91a8b0c153277a7e678eca7d00f0f3f61598f832fbda835ddcf02fcda
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.23.12.09.05
+  version: 2026.06.23.18.28.43
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.12.09.05-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.18.28.43-hd8ed1ab_0.conda
   hash:
-    md5: 885f791054f23529c7acd2c1adaa0558
-    sha256: 2cf31b221d1071ac71e1f51e0b8c9dc4ae6820ef41c2ee2b0048564e6676230c
+    md5: 3a188aac28c3a327ea7cb329cb758e26
+    sha256: 21d69ff91a8b0c153277a7e678eca7d00f0f3f61598f832fbda835ddcf02fcda
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.23.12.09.05
+  version: 2026.06.23.18.28.43
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.12.09.05-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.18.28.43-hd8ed1ab_0.conda
   hash:
-    md5: 885f791054f23529c7acd2c1adaa0558
-    sha256: 2cf31b221d1071ac71e1f51e0b8c9dc4ae6820ef41c2ee2b0048564e6676230c
+    md5: 3a188aac28c3a327ea7cb329cb758e26
+    sha256: 21d69ff91a8b0c153277a7e678eca7d00f0f3f61598f832fbda835ddcf02fcda
   category: main
   optional: false
 - name: conda-index
-  version: 0.11.0
+  version: 0.12.1
   manager: conda
   platform: linux-64
   dependencies:
-    click: '>=8'
     conda: '>=25'
     conda-package-streaming: '>=0.12.0'
     filelock: ''
@@ -2451,18 +2450,17 @@ package:
     python: '>=3.10'
     ruamel.yaml: ''
     zstandard: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.11.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.12.1-pyhd8ed1ab_0.conda
   hash:
-    md5: 8cc4a08be7f6235df245a345c77ca97c
-    sha256: b4ca0bd410b8e3bff5dfb317431aaae7fb2d02f0d349a1320de6949922990a5a
+    md5: 1b8035639db6b74dcdc6b5412ae89011
+    sha256: 39f8f4b24e6c6b701679949950af3220bcf42bd634a68d63f7d39f64752b79a6
   category: main
   optional: false
 - name: conda-index
-  version: 0.11.0
+  version: 0.12.1
   manager: conda
   platform: linux-aarch64
   dependencies:
-    click: '>=8'
     conda: '>=25'
     conda-package-streaming: '>=0.12.0'
     filelock: ''
@@ -2471,18 +2469,17 @@ package:
     python: '>=3.10'
     ruamel.yaml: ''
     zstandard: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.11.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.12.1-pyhd8ed1ab_0.conda
   hash:
-    md5: 8cc4a08be7f6235df245a345c77ca97c
-    sha256: b4ca0bd410b8e3bff5dfb317431aaae7fb2d02f0d349a1320de6949922990a5a
+    md5: 1b8035639db6b74dcdc6b5412ae89011
+    sha256: 39f8f4b24e6c6b701679949950af3220bcf42bd634a68d63f7d39f64752b79a6
   category: main
   optional: false
 - name: conda-index
-  version: 0.11.0
+  version: 0.12.1
   manager: conda
   platform: osx-arm64
   dependencies:
-    click: '>=8'
     conda: '>=25'
     conda-package-streaming: '>=0.12.0'
     filelock: ''
@@ -2491,10 +2488,10 @@ package:
     python: '>=3.10'
     ruamel.yaml: ''
     zstandard: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.11.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-index-0.12.1-pyhd8ed1ab_0.conda
   hash:
-    md5: 8cc4a08be7f6235df245a345c77ca97c
-    sha256: b4ca0bd410b8e3bff5dfb317431aaae7fb2d02f0d349a1320de6949922990a5a
+    md5: 1b8035639db6b74dcdc6b5412ae89011
+    sha256: 39f8f4b24e6c6b701679949950af3220bcf42bd634a68d63f7d39f64752b79a6
   category: main
   optional: false
 - name: conda-libmamba-solver
@@ -16760,7 +16757,7 @@ package:
   category: main
   optional: false
 - name: vcs_versioning
-  version: 2.1.0
+  version: 2.1.1
   manager: conda
   platform: linux-64
   dependencies:
@@ -16768,14 +16765,14 @@ package:
     python: ''
     tomli: '>=1'
     typing_extensions: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.0-pyhcf101f3_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.1-pyhcf101f3_0.conda
   hash:
-    md5: f8f01e25c2df7d0bcb3e89ca4cff9a73
-    sha256: 53e719e6b35382c1377d300a25304fb255c017e3577e83037d8adcbaa915ccbe
+    md5: 4430959c6e17f107b4baa97d4baa271a
+    sha256: 4cdaa3d3fb169a1e6a087ceb2ae52122b950e4379f7c21a468600071540b330b
   category: main
   optional: false
 - name: vcs_versioning
-  version: 2.1.0
+  version: 2.1.1
   manager: conda
   platform: linux-aarch64
   dependencies:
@@ -16783,14 +16780,14 @@ package:
     python: ''
     tomli: '>=1'
     typing_extensions: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.0-pyhcf101f3_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.1-pyhcf101f3_0.conda
   hash:
-    md5: f8f01e25c2df7d0bcb3e89ca4cff9a73
-    sha256: 53e719e6b35382c1377d300a25304fb255c017e3577e83037d8adcbaa915ccbe
+    md5: 4430959c6e17f107b4baa97d4baa271a
+    sha256: 4cdaa3d3fb169a1e6a087ceb2ae52122b950e4379f7c21a468600071540b330b
   category: main
   optional: false
 - name: vcs_versioning
-  version: 2.1.0
+  version: 2.1.1
   manager: conda
   platform: osx-arm64
   dependencies:
@@ -16798,10 +16795,10 @@ package:
     python: ''
     tomli: '>=1'
     typing_extensions: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.0-pyhcf101f3_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/vcs_versioning-2.1.1-pyhcf101f3_0.conda
   hash:
-    md5: f8f01e25c2df7d0bcb3e89ca4cff9a73
-    sha256: 53e719e6b35382c1377d300a25304fb255c017e3577e83037d8adcbaa915ccbe
+    md5: 4430959c6e17f107b4baa97d4baa271a
+    sha256: 4cdaa3d3fb169a1e6a087ceb2ae52122b950e4379f7c21a468600071540b330b
   category: main
   optional: false
 - name: virtualenv
