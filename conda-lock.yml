@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.22.39.30
+  version: 2026.06.23.04.36.53
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.22.39.30-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.04.36.53-hd8ed1ab_0.conda
   hash:
-    md5: e23969087d6bd82e68637b9c8d4a6640
-    sha256: 02e46ae0c1f39d042bdf2fdf802781a64c8b6b2e5a98b0111387a30eee597320
+    md5: fa7accbd817d49c07828d1797b1b6ad2
+    sha256: 5c0890fceaa7e8df4fc7b46094a1d882195d748bb66e00d38ee6c7615b0d4e3d
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.22.39.30
+  version: 2026.06.23.04.36.53
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.22.39.30-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.04.36.53-hd8ed1ab_0.conda
   hash:
-    md5: e23969087d6bd82e68637b9c8d4a6640
-    sha256: 02e46ae0c1f39d042bdf2fdf802781a64c8b6b2e5a98b0111387a30eee597320
+    md5: fa7accbd817d49c07828d1797b1b6ad2
+    sha256: 5c0890fceaa7e8df4fc7b46094a1d882195d748bb66e00d38ee6c7615b0d4e3d
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.06.22.22.39.30
+  version: 2026.06.23.04.36.53
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.22.22.39.30-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.06.23.04.36.53-hd8ed1ab_0.conda
   hash:
-    md5: e23969087d6bd82e68637b9c8d4a6640
-    sha256: 02e46ae0c1f39d042bdf2fdf802781a64c8b6b2e5a98b0111387a30eee597320
+    md5: fa7accbd817d49c07828d1797b1b6ad2
+    sha256: 5c0890fceaa7e8df4fc7b46094a1d882195d748bb66e00d38ee6c7615b0d4e3d
   category: main
   optional: false
 - name: conda-index
@@ -3195,7 +3195,7 @@ package:
   category: main
   optional: false
 - name: coverage
-  version: 7.14.2
+  version: 7.14.3
   manager: conda
   platform: linux-64
   dependencies:
@@ -3204,14 +3204,14 @@ package:
     python: '>=3.12,<3.13.0a0'
     python_abi: 3.12.*
     tomli: ''
-  url: https://conda.anaconda.org/conda-forge/linux-64/coverage-7.14.2-py312h8a5da7c_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/coverage-7.14.3-py312h8a5da7c_0.conda
   hash:
-    md5: cb33d381f9299e24c8bb859223742aef
-    sha256: 407b63be0b3288e775a029101836bdf86c2433e853149c58392d84b9d36b72c4
+    md5: 685d6d2fac5fd5abfc581db3c94652b9
+    sha256: 15b33937f062c7c94f5978127fbcae1d3b9c30ff4dff59adab9ab2bd18365024
   category: main
   optional: false
 - name: coverage
-  version: 7.14.2
+  version: 7.14.3
   manager: conda
   platform: linux-aarch64
   dependencies:
@@ -3219,14 +3219,14 @@ package:
     python: '>=3.12,<3.13.0a0'
     python_abi: 3.12.*
     tomli: ''
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/coverage-7.14.2-py312hd077ced_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/coverage-7.14.3-py312hd077ced_0.conda
   hash:
-    md5: 4af380b858bff44f997d600702982ef8
-    sha256: 1b7708f03c5b4f0f8969cae5ce83f9a1459fba4189a24358e3bce3a03b149e89
+    md5: 8c6e320e532c4117e6b12bb11b55559a
+    sha256: f34502e517964cae1f275f0916e008e683e779c469167361bfe37e1318d95bc8
   category: main
   optional: false
 - name: coverage
-  version: 7.14.2
+  version: 7.14.3
   manager: conda
   platform: osx-arm64
   dependencies:
@@ -3234,10 +3234,10 @@ package:
     python: '>=3.12,<3.13.0a0'
     python_abi: 3.12.*
     tomli: ''
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/coverage-7.14.2-py312h04c11ed_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/coverage-7.14.3-py312h04c11ed_0.conda
   hash:
-    md5: 1fb60988983c0bd30fa7e62191d80954
-    sha256: b5599427a52f53ffd6956f4840e0753371687e56245e950195b4683ec6b0ed5e
+    md5: 87f48959c9e5ac6816f1a9d6291a15dd
+    sha256: c2d645a0f6628f67e022ef01056a2d2edeec87349d8f660b12e9de32a22d813d
   category: main
   optional: false
 - name: cpp-expected
