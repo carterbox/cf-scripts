@@ -39,7 +39,8 @@ def _filter_excluded_deps(graph, excluded_dependencies):
     """
     nodes_to_remove = set(excluded_dependencies)
     for excluded_dep in excluded_dependencies:
-        nodes_to_remove |= set(nx.descendants(graph, excluded_dep))
+        if excluded_dep in graph.nodes:
+            nodes_to_remove |= set(nx.descendants(graph, excluded_dep))
     for node in nodes_to_remove:
         pluck(graph, node)
     # post-plucking cleanup
@@ -437,6 +438,7 @@ class WinArm64(_CrossCompileRebuild):
     build_platform = {"win_arm64": "win_64"}
     pkg_list_filename = "win_arm64.txt"
     arches = {"win_arm64": "win_64"}
+    excluded_dependencies = {"r-languageserver"}
 
     def __init__(self, *args, **kwargs):
         kwargs.setdefault("name", "support windows arm64 platform")
