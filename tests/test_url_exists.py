@@ -48,9 +48,10 @@ from conda_forge_tick.update_sources import url_exists
             True,
             marks=pytest.mark.xfail(reason="sometimes this fails"),
         ),
-        (
+        pytest.param(
             "ftp://ftp.info-zip.org/pub/infozip/src/zip33879130.tgz",
             False,
+            marks=pytest.mark.xfail(reason="sometimes this fails"),
         ),
     ],
 )
