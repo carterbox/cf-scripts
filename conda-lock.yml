@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.10.23.49
+  version: 2026.07.10.17.17.09
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.10.23.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
   hash:
-    md5: b802dd03f102bdd68ac8a092300253f8
-    sha256: 5b15a78a817dc518248283d6de784fee99066535b969330e72ef114fe6a3adb7
+    md5: 9e04d895d67e711ab00f624abb56f500
+    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.10.23.49
+  version: 2026.07.10.17.17.09
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.10.23.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
   hash:
-    md5: b802dd03f102bdd68ac8a092300253f8
-    sha256: 5b15a78a817dc518248283d6de784fee99066535b969330e72ef114fe6a3adb7
+    md5: 9e04d895d67e711ab00f624abb56f500
+    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.10.23.49
+  version: 2026.07.10.17.17.09
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.10.23.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
   hash:
-    md5: b802dd03f102bdd68ac8a092300253f8
-    sha256: 5b15a78a817dc518248283d6de784fee99066535b969330e72ef114fe6a3adb7
+    md5: 9e04d895d67e711ab00f624abb56f500
+    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
   category: main
   optional: false
 - name: conda-index
@@ -17192,7 +17192,7 @@ package:
   category: main
   optional: false
 - name: websockets
-  version: '16.0'
+  version: '16.1'
   manager: conda
   platform: linux-64
   dependencies:
@@ -17200,38 +17200,38 @@ package:
     libgcc: '>=14'
     python: ''
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/websockets-16.0-py312h5253ce2_1.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/websockets-16.1-py312h574c966_0.conda
   hash:
-    md5: e35ffb48178b20ee1a43fbe7abc93746
-    sha256: dd598cab9175a9ab11c8a1798c49ccabe923263d12aababa84a296cb18206464
+    md5: 88d98342bee309d881f2ba2dea2d0396
+    sha256: 3660c7a5547a3822ff84185b954805c6f4d74d33d8062f6a821ee5b45b298e40
   category: main
   optional: false
 - name: websockets
-  version: '16.0'
+  version: '16.1'
   manager: conda
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
-    python: 3.12.*
+    python: ''
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/websockets-16.0-py312hd41f8a7_1.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/websockets-16.1-py312he3571bd_0.conda
   hash:
-    md5: 5fb3255c604a88f389c84d063098bcbe
-    sha256: 2437ac324f0c89cb62af9471cca8e14267201199eb2716bc2de7cc1530b9edb0
+    md5: 6045128b6dec49266a1811a6735a3880
+    sha256: 9d39812e5e585bd7a43d1826ae554b339a74a6c0683d49e4ed1100086295276f
   category: main
   optional: false
 - name: websockets
-  version: '16.0'
+  version: '16.1'
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
-    python: 3.12.*
+    python: ''
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/websockets-16.0-py312hb3ab3e3_1.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/websockets-16.1-py312h939899b_0.conda
   hash:
-    md5: 3da07548ed0e08634abf2b3b878eabc1
-    sha256: 4b15497f3cbc40c6fc9e0f155e9cd31aa13e8d2cb1930355da934af22816a73a
+    md5: 0c3d07db077d206d27fdc9567ce8ebde
+    sha256: 604a9b323c9b7b2f4e69c1a7519fdb654907dbc13cb5270073eb5b955538d8c7
   category: main
   optional: false
 - name: werkzeug
