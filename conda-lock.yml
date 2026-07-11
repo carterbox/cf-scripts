@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.17.17.09
+  version: 2026.07.11.07.12.17
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.11.07.12.17-hd8ed1ab_0.conda
   hash:
-    md5: 9e04d895d67e711ab00f624abb56f500
-    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
+    md5: 02a99c39ff7f525182eb5d7e8948c74a
+    sha256: 5f5ecd463b7c53091445ea91d832b1343976aeb516f4f13cb6fe0ee3290107b5
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.17.17.09
+  version: 2026.07.11.07.12.17
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.11.07.12.17-hd8ed1ab_0.conda
   hash:
-    md5: 9e04d895d67e711ab00f624abb56f500
-    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
+    md5: 02a99c39ff7f525182eb5d7e8948c74a
+    sha256: 5f5ecd463b7c53091445ea91d832b1343976aeb516f4f13cb6fe0ee3290107b5
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.10.17.17.09
+  version: 2026.07.11.07.12.17
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.10.17.17.09-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.11.07.12.17-hd8ed1ab_0.conda
   hash:
-    md5: 9e04d895d67e711ab00f624abb56f500
-    sha256: 7c038b4e9d69c20467a82771748718be999d54ddbf2e6573f25f78886f3a13d7
+    md5: 02a99c39ff7f525182eb5d7e8948c74a
+    sha256: 5f5ecd463b7c53091445ea91d832b1343976aeb516f4f13cb6fe0ee3290107b5
   category: main
   optional: false
 - name: conda-index
@@ -8566,40 +8566,40 @@ package:
   category: main
   optional: false
 - name: libjpeg-turbo
-  version: 3.1.4.1
+  version: 3.2.0
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.1.4.1-hb03c661_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.2.0-hb03c661_0.conda
   hash:
-    md5: 6178c6f2fb254558238ef4e6c56fb782
-    sha256: 10056646c28115b174de81a44e23e3a0a3b95b5347d2e6c45cc6d49d35294256
+    md5: 466badda5536d85ddc63ee9404f29735
+    sha256: 716332fd31b3808da7a4235a05212a9e9da05e854864c3def2dea0b5d2bf7610
   category: main
   optional: false
 - name: libjpeg-turbo
-  version: 3.1.4.1
+  version: 3.2.0
   manager: conda
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.1.4.1-he30d5cf_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.2.0-he30d5cf_0.conda
   hash:
-    md5: a85ba48648f6868016f2741fd9170250
-    sha256: e97ec2af5f09f8f6ea8ecd550055c95ae80fae22015fcfadaa94eafe025c9ccc
+    md5: de0780a3690bffe75ac3fa70db84596d
+    sha256: da3e45974c1f23c76264d6358463861236862052ca156e34b502ef3c27e36fb8
   category: main
   optional: false
 - name: libjpeg-turbo
-  version: 3.1.4.1
+  version: 3.2.0
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/libjpeg-turbo-3.1.4.1-h84a0fba_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/libjpeg-turbo-3.2.0-h84a0fba_0.conda
   hash:
-    md5: b8a7544c83a67258b0e8592ec6a5d322
-    sha256: 17e035ae6a520ff6a6bb5dd93a4a7c3895891f4f9743bcb8c6ef607445a31cd0
+    md5: 8f05a69b7e870574a2d366043f1515b1
+    sha256: e2b4fce7cf48705dc182a0aa6c478a47b16202aeb712242caf9c9ab6a19778fa
   category: main
   optional: false
 - name: liblapack
@@ -14363,7 +14363,7 @@ package:
   category: main
   optional: false
 - name: regex
-  version: 2026.6.28
+  version: 2026.7.10
   manager: conda
   platform: linux-64
   dependencies:
@@ -14371,38 +14371,38 @@ package:
     libgcc: '>=14'
     python: '>=3.12,<3.13.0a0'
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/regex-2026.6.28-py312h4c3975b_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/regex-2026.7.10-py312h4c3975b_0.conda
   hash:
-    md5: 6a5e4e0d9e5e03621aa2fdf44244db66
-    sha256: 75d6b6a85799e9e27ee133aa76538ab989f74f89b483da1fe7f1100dfb843e64
+    md5: fb3a22c4e2b17bc646059c4873daa978
+    sha256: 24c8711448f9d02ebaf9e9e11e338051fc1b3d341f07fa2ee4b75d76896f8cc2
   category: main
   optional: false
 - name: regex
-  version: 2026.6.28
+  version: 2026.7.10
   manager: conda
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
     python: '>=3.12,<3.13.0a0,>=3.12,<3.13.0a0'
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/regex-2026.6.28-py312hcd1a082_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/regex-2026.7.10-py312hcd1a082_0.conda
   hash:
-    md5: c5512c0bf722f663f1b9eb2af4f23611
-    sha256: 15db24f801820298ecd5c5950c442b4d9abc257659798662613bf3a97810577f
+    md5: 2c6fab695f6fdf9b35e95d88d84d0988
+    sha256: d8b4cdb9a217dd3f552d1e5fb85f76c56d153be20aaa856048625c055c3bf4dc
   category: main
   optional: false
 - name: regex
-  version: 2026.6.28
+  version: 2026.7.10
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
     python: '>=3.12,<3.13.0a0,>=3.12,<3.13.0a0'
     python_abi: 3.12.*
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/regex-2026.6.28-py312h2bbb03f_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/regex-2026.7.10-py312h2bbb03f_0.conda
   hash:
-    md5: 3cc4ef31154b864693ff8965fdfe76d3
-    sha256: ae6972bec67426aac1ec9a38205531c13fa411e382b1cfc408a72b1cc45667c1
+    md5: ef5f0ce897e8d7439400dc6dbe3cd084
+    sha256: 9e81deaa6dd8786a138adc1ec996c260ffaac76478b3a1bf141c5d29f9918b23
   category: main
   optional: false
 - name: reproc
