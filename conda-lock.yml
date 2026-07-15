@@ -1233,40 +1233,40 @@ package:
   category: main
   optional: false
 - name: c-ares
-  version: 1.34.7
+  version: 1.34.8
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.7-hb03c661_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.8-hb03c661_0.conda
   hash:
-    md5: 9baa084a2da406026ab2ce423c9930c1
-    sha256: 2492fb98e8460765b7c32df1e910029c5a7d7298ab598e6df483e66e113fad2f
+    md5: 6130ad6705adc993b5d8482b7f66e01f
+    sha256: dee93a82d045f9aa8277829aa465224afa3c7a6ac18388de66099b2be7f705e7
   category: main
   optional: false
 - name: c-ares
-  version: 1.34.7
+  version: 1.34.8
   manager: conda
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.34.7-he30d5cf_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.34.8-he30d5cf_0.conda
   hash:
-    md5: ecca41a47e69eab3ecd6aebab5651379
-    sha256: 901d9d7dec92e180ac729fb4d4f0fe0956b70bdf11fdf48c38d6d049cb76b2d9
+    md5: a8a5833ef43f9b31a4d548071ea5ba75
+    sha256: 24f78776eda069a6c1566fd6d65379e45747d0a7cce9f864686690806543c408
   category: main
   optional: false
 - name: c-ares
-  version: 1.34.7
+  version: 1.34.8
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.7-h84a0fba_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.8-h84a0fba_0.conda
   hash:
-    md5: 3c93a6af81f29a03b42f1bd6deaf8c74
-    sha256: b48fce2b209ace58b5bed873a58baf6ccb48d1119172dd7aef7a9b23890f43ae
+    md5: 187f3b77e761a2f126f9e09f165cebba
+    sha256: 2bfa6ed107d2d8b5835228f8392050cc12e4b6dd732ee044c4ab503b94ff7f31
   category: main
   optional: false
 - name: ca-certificates
@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.15.02.44.34
+  version: 2026.07.15.16.57.46
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.02.44.34-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.16.57.46-hd8ed1ab_0.conda
   hash:
-    md5: dec212dab3ca6a3220bfd0e62e39236a
-    sha256: b43d51b5c29156fb419978c630af0af5542bf01962e1ff94011f35d6f8c3084f
+    md5: af20b03ba344ebbd91af07fcdead0e6b
+    sha256: 07bd9da0ad083912b48200b38583f5ae777c65b0121cc596b573a6aa2eb4a3de
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.15.02.44.34
+  version: 2026.07.15.16.57.46
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.02.44.34-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.16.57.46-hd8ed1ab_0.conda
   hash:
-    md5: dec212dab3ca6a3220bfd0e62e39236a
-    sha256: b43d51b5c29156fb419978c630af0af5542bf01962e1ff94011f35d6f8c3084f
+    md5: af20b03ba344ebbd91af07fcdead0e6b
+    sha256: 07bd9da0ad083912b48200b38583f5ae777c65b0121cc596b573a6aa2eb4a3de
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.15.02.44.34
+  version: 2026.07.15.16.57.46
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.02.44.34-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.15.16.57.46-hd8ed1ab_0.conda
   hash:
-    md5: dec212dab3ca6a3220bfd0e62e39236a
-    sha256: b43d51b5c29156fb419978c630af0af5542bf01962e1ff94011f35d6f8c3084f
+    md5: af20b03ba344ebbd91af07fcdead0e6b
+    sha256: 07bd9da0ad083912b48200b38583f5ae777c65b0121cc596b573a6aa2eb4a3de
   category: main
   optional: false
 - name: conda-index
@@ -12118,7 +12118,7 @@ package:
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.68.0
+  version: 0.69.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -12128,14 +12128,14 @@ package:
     libgcc: '>=14'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/linux-64/py-rattler-build-0.68.0-py310hb823017_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/py-rattler-build-0.69.0-py310hb823017_0.conda
   hash:
-    md5: d6b9f24dcb9e8eadfd93fdf7a976c9f2
-    sha256: dcb2ae715331af64feed3fedc5061c09c31bef65f064d9bab151483d47da1084
+    md5: 0a7c7a286e5d8f865bc4e8cc00620a16
+    sha256: d0c34dd8c587091b8c90b4e5cc5eb9f15a1cf29aa436317d29e8baf118cb8079
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.68.0
+  version: 0.69.0
   manager: conda
   platform: linux-aarch64
   dependencies:
@@ -12144,14 +12144,14 @@ package:
     libgcc: '>=14'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/py-rattler-build-0.68.0-py310h160093b_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/py-rattler-build-0.69.0-py310h160093b_0.conda
   hash:
-    md5: 0c077e43c4182763edf0ea8a22881af4
-    sha256: c9b3783500b766a6585e6efbc3e8e4495f380bd9ab1f80bfd7eb1279d3c7201c
+    md5: e0434b45fd793417a703fee08908d2e0
+    sha256: 2bdd8757a50cfa304189875453fcda4d11594bf6673c1b5edb545f9641e0baae
   category: main
   optional: false
 - name: py-rattler-build
-  version: 0.68.0
+  version: 0.69.0
   manager: conda
   platform: osx-arm64
   dependencies:
@@ -12160,10 +12160,10 @@ package:
     cpython: '>=3.10'
     openssl: '>=3.5.7,<4.0a0'
     python: ''
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/py-rattler-build-0.68.0-py310he76dbf2_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/py-rattler-build-0.69.0-py310he76dbf2_0.conda
   hash:
-    md5: a382f9abc6ca68f18a203e90ea1a9eb0
-    sha256: 66a4a8f6798b600d5e7258c5a09386c35e2c72eb2487ac65a89971cdcb7207e2
+    md5: ec5f79b50a2f64dfbde1e12a023e7274
+    sha256: 12efd69cc4763e2a48904c8bb9a98927faaa8317e1503bf23da727b449f385c0
   category: main
   optional: false
 - name: pyasn1
