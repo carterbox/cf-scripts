@@ -7,6 +7,7 @@ import networkx as nx
 import pytest
 
 import conda_forge_tick.migrators
+from conda_forge_tick.contexts import ClonedFeedstockContext, FeedstockContext
 from conda_forge_tick.lazy_json_backends import dumps, loads
 from conda_forge_tick.migrators import core, make_from_lazy_json_data
 
@@ -328,6 +329,34 @@ def test_migrator_to_json_riscv64():
     ]
     assert isinstance(migrator2, conda_forge_tick.migrators.LinuxRISCV64)
     assert dumps(migrator2.to_lazy_json_data()) == lzj_data
+
+    main_ctx = FeedstockContext(
+        feedstock_name="python",
+        attrs={"conda-forge.yml": {"provider": {"default_branch": "main"}}},
+    )
+    assert migrator.pr_title(main_ctx) == "Support linux-riscv64 platform"
+    assert migrator.remote_branch(main_ctx) == "bot-pr_riscv64"
+
+    other_branch_ctx = FeedstockContext(
+        feedstock_name="python",
+        attrs={
+            "conda-forge.yml": {"provider": {"default_branch": "main"}},
+            "branch": "1.20.x",
+        },
+    )
+    assert (
+        migrator.pr_title(other_branch_ctx)
+        == "[1.20.x] Support linux-riscv64 platform"
+    )
+
+    cloned_ctx = ClonedFeedstockContext(
+        feedstock_name="python",
+        attrs={"conda-forge.yml": {"provider": {"default_branch": "main"}}},
+        local_clone_dir=Path("/dev/null"),
+    )
+    body = migrator.pr_body(cloned_ctx)
+    assert "linux riscv64 migration" in body
+    assert "conda-forge/help-riscv64" in body
 
 
 @pytest.mark.parametrize(
