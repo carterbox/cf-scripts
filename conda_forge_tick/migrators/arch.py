@@ -500,11 +500,11 @@ class LinuxRISCV64(_CrossCompileRebuild):
         body = body.format(
             dedent(
                 """\
-        This feedstock is being rebuilt as part of the linux riscv64 migration.
+                This feedstock is being rebuilt as part of the linux riscv64 migration.
 
-        **Feel free to merge the PR if CI is all green, but please don't close it
-        without reaching out the the linux-riscv64 team first at <code>@</code>conda-forge/help-riscv64.**
-        """,
+                **Feel free to merge the PR if CI is all green, but please don't close it
+                without reaching out the the linux-riscv64 team first at <code>@</code>conda-forge/help-riscv64.**
+                """,
             ),
         )
         return body
