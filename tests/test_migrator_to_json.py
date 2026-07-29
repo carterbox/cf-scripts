@@ -345,8 +345,7 @@ def test_migrator_to_json_riscv64():
         },
     )
     assert (
-        migrator.pr_title(other_branch_ctx)
-        == "[1.20.x] Support linux-riscv64 platform"
+        migrator.pr_title(other_branch_ctx) == "[1.20.x] Support linux-riscv64 platform"
     )
 
     cloned_ctx = ClonedFeedstockContext(
