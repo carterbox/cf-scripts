@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.30.13.47.04
+  version: 2026.07.31.05.55.43
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.30.13.47.04-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.31.05.55.43-hd8ed1ab_0.conda
   hash:
-    md5: 2082cf2c1f64b5a878482d02464302f5
-    sha256: ba49e486f65cc4bd5fe4c85aace80a8e379ae69d018417905563e00b5149e37f
+    md5: 47bbf238b5048e69fd09ea5983a0e403
+    sha256: 3850d618e5e2906d18f52ba8ab34d902689338a69861e41f8fb5dd27edcc10d3
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.30.13.47.04
+  version: 2026.07.31.05.55.43
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.30.13.47.04-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.31.05.55.43-hd8ed1ab_0.conda
   hash:
-    md5: 2082cf2c1f64b5a878482d02464302f5
-    sha256: ba49e486f65cc4bd5fe4c85aace80a8e379ae69d018417905563e00b5149e37f
+    md5: 47bbf238b5048e69fd09ea5983a0e403
+    sha256: 3850d618e5e2906d18f52ba8ab34d902689338a69861e41f8fb5dd27edcc10d3
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.07.30.13.47.04
+  version: 2026.07.31.05.55.43
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.30.13.47.04-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.07.31.05.55.43-hd8ed1ab_0.conda
   hash:
-    md5: 2082cf2c1f64b5a878482d02464302f5
-    sha256: ba49e486f65cc4bd5fe4c85aace80a8e379ae69d018417905563e00b5149e37f
+    md5: 47bbf238b5048e69fd09ea5983a0e403
+    sha256: 3850d618e5e2906d18f52ba8ab34d902689338a69861e41f8fb5dd27edcc10d3
   category: main
   optional: false
 - name: conda-index
@@ -5328,47 +5328,47 @@ package:
   category: main
   optional: false
 - name: glib-tools
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libffi: ''
     libgcc: '>=14'
-    libglib: ==2.88.2
-  url: https://conda.anaconda.org/conda-forge/linux-64/glib-tools-2.88.2-h8094192_0.conda
+    libglib: ==2.88.3
+  url: https://conda.anaconda.org/conda-forge/linux-64/glib-tools-2.88.3-h95f0039_0.conda
   hash:
-    md5: cfe66c21ae651b84a3d25a1dbb641a54
-    sha256: 079757e4e0497d67505b52062668e4cc0d2a86ec065ae2c0c57487a178206061
+    md5: 841fd9387fd3f24ea69a4f679242e32c
+    sha256: ccdad3d9149ca12353583818bdfde9f66753da7e8ea6dd35a6312062e2fe60d2
   category: main
   optional: false
 - name: glib-tools
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: linux-aarch64
   dependencies:
     libffi: ''
     libgcc: '>=14'
-    libglib: ==2.88.2
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/glib-tools-2.88.2-h7aeb4f4_0.conda
+    libglib: ==2.88.3
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/glib-tools-2.88.3-h34e06a2_0.conda
   hash:
-    md5: c7195d7c970b8bdca5d6b5f6adb66886
-    sha256: cbb0679fccff1b87253d24a8aee96bf3908f16c4a1a828c35578ed8e8d516a61
+    md5: 99fac6e2de753f95ec4f8c2a086e67c8
+    sha256: 231679daceed6f0dd243e124dda5c0abdfd3e7fe17de9f165f7e00633a57a030
   category: main
   optional: false
 - name: glib-tools
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
     libffi: ''
-    libglib: ==2.88.2
+    libglib: ==2.88.3
     libintl: '>=0.25.1,<1.0a0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/glib-tools-2.88.2-h246a70f_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/glib-tools-2.88.3-h5f197ff_0.conda
   hash:
-    md5: 973a5ef252899cd0916418c75a864169
-    sha256: 6a98eabd4d5bb902c391e9f7c9e655ce61292ff6f1bb0c592da42fd66e6c89f9
+    md5: 607824e2f42f49049c999432385832e3
+    sha256: 672b06a290ae9bd4443f9315334f2dbb6d0ba239b3a1f2ea40fd66321e7a3ac6
   category: main
   optional: false
 - name: gmp
@@ -8185,7 +8185,7 @@ package:
   category: main
   optional: false
 - name: libglib
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: linux-64
   dependencies:
@@ -8195,14 +8195,14 @@ package:
     libiconv: '>=1.18,<2.0a0'
     libzlib: '>=1.3.2,<2.0a0'
     pcre2: '>=10.47,<10.48.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libglib-2.88.2-h0d30a3d_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libglib-2.88.3-h0d30a3d_0.conda
   hash:
-    md5: 889febc66cd9e4190f80ef9718fa239b
-    sha256: 4bee10e62796f01e4fa2b5849135b1cc061337fe9cf5eb9bd79e9664922ae0e4
+    md5: 17c3b7b6bcbd35b688c933eb4834c0bc
+    sha256: 69ea4df61403531e5b3e5f3d52ba2837423df361b4eb8727f5b63aaf6de6768a
   category: main
   optional: false
 - name: libglib
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: linux-aarch64
   dependencies:
@@ -8211,14 +8211,14 @@ package:
     libiconv: '>=1.18,<2.0a0'
     libzlib: '>=1.3.2,<2.0a0'
     pcre2: '>=10.47,<10.48.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/libglib-2.88.2-h96a7f82_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/libglib-2.88.3-h96a7f82_0.conda
   hash:
-    md5: 31d404d8c0755d0f9062a4459f5a1084
-    sha256: 6a13152a81513117b8d41bf64dea56c731d877bcced5a24fab738e3c0f9ac58c
+    md5: ea53e52bd78eebac3f2dd864b928e98b
+    sha256: 79451e5621a8038f75751a0ce0e032441eac2a1ba7ad429c41685141b417ca8f
   category: main
   optional: false
 - name: libglib
-  version: 2.88.2
+  version: 2.88.3
   manager: conda
   platform: osx-arm64
   dependencies:
@@ -8228,10 +8228,10 @@ package:
     libintl: '>=0.25.1,<1.0a0'
     libzlib: '>=1.3.2,<2.0a0'
     pcre2: '>=10.47,<10.48.0a0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.88.2-ha08bb59_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.88.3-ha08bb59_0.conda
   hash:
-    md5: 03123cafdc96cef79fc8a615f9119b79
-    sha256: 68ac66904a284a7dfbb3bdf9225380eaf20750b2d414215e6d7af5caa3ed1a63
+    md5: 4a9309d9502a08a2d29b1743dcfb0e7f
+    sha256: a14417ae1f3f4a92c5766354eb280342fa6aae72a09af86bf7fcfc12a8c9225c
   category: main
   optional: false
 - name: libglvnd
