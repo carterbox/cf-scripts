@@ -2402,36 +2402,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.04.03.43.27
+  version: 2026.08.04.15.04.25
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.03.43.27-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.15.04.25-hd8ed1ab_0.conda
   hash:
-    md5: 160699cacdeb99a4674d6f0dd8ae3525
-    sha256: 7df94a48d0cbbcb066f5c889f1187226f039655f47f4e5907d8dc6937774abf7
+    md5: b0e3ff3b09200f0ff427dcb2ccf9bb4c
+    sha256: 3abad3b08535dbf867479207642475053fda195ebc7ac9238afbe8deff91c50c
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.04.03.43.27
+  version: 2026.08.04.15.04.25
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.03.43.27-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.15.04.25-hd8ed1ab_0.conda
   hash:
-    md5: 160699cacdeb99a4674d6f0dd8ae3525
-    sha256: 7df94a48d0cbbcb066f5c889f1187226f039655f47f4e5907d8dc6937774abf7
+    md5: b0e3ff3b09200f0ff427dcb2ccf9bb4c
+    sha256: 3abad3b08535dbf867479207642475053fda195ebc7ac9238afbe8deff91c50c
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.04.03.43.27
+  version: 2026.08.04.15.04.25
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.03.43.27-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.04.15.04.25-hd8ed1ab_0.conda
   hash:
-    md5: 160699cacdeb99a4674d6f0dd8ae3525
-    sha256: 7df94a48d0cbbcb066f5c889f1187226f039655f47f4e5907d8dc6937774abf7
+    md5: b0e3ff3b09200f0ff427dcb2ccf9bb4c
+    sha256: 3abad3b08535dbf867479207642475053fda195ebc7ac9238afbe8deff91c50c
   category: main
   optional: false
 - name: conda-index
@@ -11595,7 +11595,7 @@ package:
   category: main
   optional: false
 - name: pixi
-  version: 0.76.0
+  version: 0.76.1
   manager: conda
   platform: linux-64
   dependencies:
@@ -11603,37 +11603,37 @@ package:
     libgcc: '>=14'
     libstdcxx: '>=14'
     openssl: '>=3.5.7,<4.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/pixi-0.76.0-ha759004_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/pixi-0.76.1-ha759004_0.conda
   hash:
-    md5: 3e773b458fd5816a8a384c720d5d3141
-    sha256: 33a180430644c39aca22ad06656f340bcf00dfd95682b40b5a47cfb80860f293
+    md5: 48adcf55f6dfbee32423cfa92d97c82c
+    sha256: 09d1ecbab8c4f825994fe94eafe7f1ea90450465ee77ee569d9789d29868a6b5
   category: main
   optional: false
 - name: pixi
-  version: 0.76.0
+  version: 0.76.1
   manager: conda
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
     libstdcxx: '>=14'
     openssl: '>=3.5.7,<4.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/pixi-0.76.0-h1d7f6d8_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/pixi-0.76.1-h1d7f6d8_0.conda
   hash:
-    md5: a39cf7f3d39b108d8133fd87f082172f
-    sha256: 0534ec27e0a12e65c732708707ed5b32b96473b275264e998be2e532806b45df
+    md5: ded39fc80ea8875a7bcd45b0829faf04
+    sha256: 53c60517f6e214ef5c084da2308c68b75a92fe46fec5fdcfeaf1f8e193a10b6e
   category: main
   optional: false
 - name: pixi
-  version: 0.76.0
+  version: 0.76.1
   manager: conda
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
     libcxx: '>=19'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/pixi-0.76.0-h2307240_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/pixi-0.76.1-h2307240_0.conda
   hash:
-    md5: 0c4fc66337f481c7ef49f162bde51cc4
-    sha256: 7f345d79bb86704ab645b152921ecb4a036687b8f15a3363fe4d2ff33f2c555e
+    md5: 8979ff3cc7977958858d729ee0819598
+    sha256: 833f353ef75a4c5d6f095c5d2edaec7c02114c7e19e9cc519873f4a63a1e71a4
   category: main
   optional: false
 - name: pixman
