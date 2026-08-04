@@ -107,7 +107,7 @@ jobs:
         working-directory: conda-forge-bot
         run: |
           # put pinnings at old version for testing
-          micromamba install conda-forge-pinning==2025.02.25.13.14.53
+          micromamba install conda-forge-pinning==2026.08.04.15.04.25
           pip install --no-deps --no-build-isolation -e .
 
       - name: get version
