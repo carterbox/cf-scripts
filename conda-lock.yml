@@ -2402,36 +2402,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.06.23.43.49
+  version: 2026.08.07.01.46.44
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.06.23.43.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.07.01.46.44-hd8ed1ab_0.conda
   hash:
-    md5: 195cad79193d43c65bd5ec6cb3a7a2f6
-    sha256: ad118c0083a851d3bf7752c4a5af31081a5bde801eac5ffef392c87f9c4ac875
+    md5: 7ad81c7bd5eafffb79cbfd1176cb49ab
+    sha256: 6d3f9358d05a0a5e86c1eca4e559c57c09bbb0ac8e0f758b3dda643b673adbf1
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.06.23.43.49
+  version: 2026.08.07.01.46.44
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.06.23.43.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.07.01.46.44-hd8ed1ab_0.conda
   hash:
-    md5: 195cad79193d43c65bd5ec6cb3a7a2f6
-    sha256: ad118c0083a851d3bf7752c4a5af31081a5bde801eac5ffef392c87f9c4ac875
+    md5: 7ad81c7bd5eafffb79cbfd1176cb49ab
+    sha256: 6d3f9358d05a0a5e86c1eca4e559c57c09bbb0ac8e0f758b3dda643b673adbf1
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.06.23.43.49
+  version: 2026.08.07.01.46.44
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.06.23.43.49-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.07.01.46.44-hd8ed1ab_0.conda
   hash:
-    md5: 195cad79193d43c65bd5ec6cb3a7a2f6
-    sha256: ad118c0083a851d3bf7752c4a5af31081a5bde801eac5ffef392c87f9c4ac875
+    md5: 7ad81c7bd5eafffb79cbfd1176cb49ab
+    sha256: 6d3f9358d05a0a5e86c1eca4e559c57c09bbb0ac8e0f758b3dda643b673adbf1
   category: main
   optional: false
 - name: conda-index
@@ -11938,11 +11938,11 @@ package:
   manager: conda
   platform: linux-aarch64
   dependencies:
-    libgcc: '>=13'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/pthread-stubs-0.4-h86ecc28_1002.conda
+    libgcc: '>=14'
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/pthread-stubs-0.4-he30d5cf_1003.conda
   hash:
-    md5: bb5a90c93e3bac3d5690acf76b4a6386
-    sha256: 977dfb0cb3935d748521dd80262fe7169ab82920afd38ed14b7fee2ea5ec01ba
+    md5: 75ad6624c7f795b828227672ca4b5f0b
+    sha256: 6138ca8729e6af8658c7e184c38370bec9b0b7840272deff79a3d0c1090f07e4
   category: main
   optional: false
 - name: ptyprocess
