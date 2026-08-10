@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.10.07.53.12
+  version: 2026.08.10.11.23.07
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.07.53.12-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.11.23.07-hd8ed1ab_0.conda
   hash:
-    md5: 668e73f15c3390e99e3d35e3757bbcf2
-    sha256: 26fd161846124325d71e7bc4e01f600f199825f49ed84c4d35219810de913b7f
+    md5: f90b0b478b8a732f41f83ba67f01846a
+    sha256: 39cfaad29b3fa6ae9a4a1f70c6a2f49cdb42fd1e8da94657999760baa402d220
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.10.07.53.12
+  version: 2026.08.10.11.23.07
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.07.53.12-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.11.23.07-hd8ed1ab_0.conda
   hash:
-    md5: 668e73f15c3390e99e3d35e3757bbcf2
-    sha256: 26fd161846124325d71e7bc4e01f600f199825f49ed84c4d35219810de913b7f
+    md5: f90b0b478b8a732f41f83ba67f01846a
+    sha256: 39cfaad29b3fa6ae9a4a1f70c6a2f49cdb42fd1e8da94657999760baa402d220
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.10.07.53.12
+  version: 2026.08.10.11.23.07
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.07.53.12-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.10.11.23.07-hd8ed1ab_0.conda
   hash:
-    md5: 668e73f15c3390e99e3d35e3757bbcf2
-    sha256: 26fd161846124325d71e7bc4e01f600f199825f49ed84c4d35219810de913b7f
+    md5: f90b0b478b8a732f41f83ba67f01846a
+    sha256: 39cfaad29b3fa6ae9a4a1f70c6a2f49cdb42fd1e8da94657999760baa402d220
   category: main
   optional: false
 - name: conda-index
@@ -10907,10 +10907,10 @@ package:
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_1.conda
   hash:
-    md5: fc21868a1a5aacc937e7a18747acb8a5
-    sha256: fc89f74bbe362fb29fa3c037697a89bec140b346a2469a90f7936d1d7ea4d8a3
+    md5: ee6c0cd80a60961a1f48aa3e0b91f986
+    sha256: 5d46557214ed184381dafe835b7c94a474a1c3b307a08a250b1ea4779b44ffb3
   category: main
   optional: false
 - name: ncurses
@@ -10919,10 +10919,10 @@ package:
   platform: linux-aarch64
   dependencies:
     libgcc: '>=14'
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-hf8d1292_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-h2b6f883_1.conda
   hash:
-    md5: b2a43456aa56fe80c2477a5094899eff
-    sha256: 369db85c5cd8d99dde364ce70725d76511d9c8199e5b820c740414091bf5bcca
+    md5: c3b4349171ca987ff33a1de61f7b3f96
+    sha256: d69a04914139627f0a6bfd19412d6c7f1e37edc896af84a6011e07e8bc1e69fa
   category: main
   optional: false
 - name: ncurses
@@ -10931,10 +10931,10 @@ package:
   platform: osx-arm64
   dependencies:
     __osx: '>=11.0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.6-h1d4f5a5_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.6-he64c551_1.conda
   hash:
-    md5: 343d10ed5b44030a2f67193905aea159
-    sha256: 4ea6c620b87bd1d42bb2ccc2c87cd2483fa2d7f9e905b14c223f11ff3f4c455d
+    md5: 3dfa0d0316dc246cd44937a557de4501
+    sha256: 7024a48c8c0d0114ed4ab53c76bf9275d50e91ba7cea367a9aead638d3c29c68
   category: main
   optional: false
 - name: networkx
