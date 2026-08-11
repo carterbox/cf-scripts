@@ -2405,36 +2405,36 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.11.16.14.08
+  version: 2026.08.11.18.29.14
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.16.14.08-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.18.29.14-hd8ed1ab_0.conda
   hash:
-    md5: 9e87e906e16ad4ed6d5e24fd048bc66e
-    sha256: 3c95e9a18d4b339745b0ea92d228dc3f3449f0df50739661deaa026e2b8dcb63
+    md5: c4bee13f85c9ab612c8d445b0f832334
+    sha256: aadde1a5859867194b6ed4439fe759bc2e2d618fdccc7967f38c036356c5ab5a
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.11.16.14.08
+  version: 2026.08.11.18.29.14
   manager: conda
   platform: linux-aarch64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.16.14.08-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.18.29.14-hd8ed1ab_0.conda
   hash:
-    md5: 9e87e906e16ad4ed6d5e24fd048bc66e
-    sha256: 3c95e9a18d4b339745b0ea92d228dc3f3449f0df50739661deaa026e2b8dcb63
+    md5: c4bee13f85c9ab612c8d445b0f832334
+    sha256: aadde1a5859867194b6ed4439fe759bc2e2d618fdccc7967f38c036356c5ab5a
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.08.11.16.14.08
+  version: 2026.08.11.18.29.14
   manager: conda
   platform: osx-arm64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.16.14.08-hd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.08.11.18.29.14-hd8ed1ab_0.conda
   hash:
-    md5: 9e87e906e16ad4ed6d5e24fd048bc66e
-    sha256: 3c95e9a18d4b339745b0ea92d228dc3f3449f0df50739661deaa026e2b8dcb63
+    md5: c4bee13f85c9ab612c8d445b0f832334
+    sha256: aadde1a5859867194b6ed4439fe759bc2e2d618fdccc7967f38c036356c5ab5a
   category: main
   optional: false
 - name: conda-index
@@ -17603,11 +17603,11 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libgcc: '>=13'
-  url: https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-hb9d3cd8_0.conda
+    libgcc: '>=14'
+  url: https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-h280c20c_0.conda
   hash:
-    md5: fb901ff28063514abb6046c9ec2c4a45
-    sha256: c12396aabb21244c212e488bbdc4abcdef0b7404b15761d9329f5a4a39113c4b
+    md5: 85c9442aec283b4e464fa9ecc484a2f3
+    sha256: 49b532d1df875c6749d9078b56a76f3f5db49a5abe0ca620b593ed474ef0ebf1
   category: main
   optional: false
 - name: xorg-libice
