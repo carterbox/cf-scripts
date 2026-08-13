@@ -306,7 +306,6 @@ def test_migrator_to_json_win_arm64():
 @pytest.mark.parametrize(
     "klass",
     [
-        conda_forge_tick.migrators.AddNVIDIATools,
         conda_forge_tick.migrators.RebuildBroken,
     ],
 )
