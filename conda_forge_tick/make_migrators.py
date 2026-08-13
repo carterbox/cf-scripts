@@ -1191,6 +1191,8 @@ def _load_migrators(
             as_completed(futs), desc="loading migrators", ncols=80, total=len(all_names)
         ):
             migrator = fut.result()
+            if migrator is None:
+                continue
 
             if getattr(migrator, "paused", False) and skip_paused:
                 continue
