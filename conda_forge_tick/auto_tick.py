@@ -872,12 +872,7 @@ def _run_migrator_on_feedstock_branch(
                     )
 
                     if not pr_json:
-                        pr_json = {  # type: ignore[assignment] # TODO: incompatible with LazyJson
-                            "state": "closed",
-                            "head": {
-                                "ref": "<this_is_not_a_branch>",
-                            },
-                        }
+                        pr_json = get_spoofed_closed_pr_info().model_dump(mode="json")  # type: ignore[assignment] # TODO: incompatible with LazyJson
                     d["PR"] = pr_json
                     if "PRed" not in pri:
                         pri["PRed"] = []
@@ -1159,6 +1154,31 @@ def _run_migrator(
                             logger.info(
                                 "skipping node %s w/ branch %s", node_name, base_branch
                             )
+
+                            # Since filtered, mark this feedstock+branch as done if needed
+                            if migrator.filter_node_migrated(attrs):
+                                with attrs["pr_info"] as pri:
+                                    sync_pr_info = False
+                                    nuid = migrator.migrator_uid(attrs)
+
+                                    if all(
+                                        pr["data"] != nuid for pr in pri.get("PRed", [])
+                                    ):
+                                        if "PRed" not in pri:
+                                            pri["PRed"] = []
+                                        pri["PRed"].append(
+                                            {
+                                                "PR": get_spoofed_closed_pr_info().model_dump(
+                                                    mode="json"
+                                                ),
+                                                "data": nuid,
+                                            }
+                                        )
+                                        sync_pr_info = True
+
+                                if sync_pr_info:
+                                    sync_lazy_json_object(pri, "file", ["github_api"])
+
                             continue
 
                         with fold_log_lines(
@@ -1182,6 +1202,7 @@ def _run_migrator(
                             )
                             if break_loop:
                                 break
+
             finally:
                 # do this but it is crazy
                 gc.collect()
