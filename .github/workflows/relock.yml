@@ -62,3 +62,4 @@ jobs:
           automerge: true
           skip-if-pr-exists: true
           git-user-name: regro-cf-autotick-bot
+          ignored-packages: conda-forge-pinning
