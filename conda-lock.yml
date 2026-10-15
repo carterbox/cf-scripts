@@ -755,14 +755,14 @@ package:
   category: main
   optional: false
 - name: conda-forge-pinning
-  version: 2026.10.14.09.43.56
+  version: 2026.10.15.09.11.00
   manager: conda
   platform: linux-64
   dependencies: {}
-  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.10.14.09.43.56-hd8ed1ab_1.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/conda-forge-pinning-2026.10.15.09.11.00-hd8ed1ab_1.conda
   hash:
-    md5: f8beb807efd648dad86ab2d4f61ef981
-    sha256: 03da9f85b1d74f58006e5e743e8f9b59ccb64d95cd8d40a33830312bbcd85f16
+    md5: 4006998e3f3d39b979d12ecd325986fc
+    sha256: 03a5a115f51f94ef9cf8df801fc82c275d307405d1b93bd2c5042699d3da813d
   category: main
   optional: false
 - name: conda-index
@@ -1651,7 +1651,7 @@ package:
     __glibc: '>=2.17,<3.0.a0'
     libffi: ''
     libgcc: '>=15'
-    libglib: ==2.90.0
+    libglib: 2.90.0
   url: https://conda.anaconda.org/conda-forge/linux-64/glib-tools-2.90.0-h3d503d9_0.conda
   hash:
     md5: d4adaebf8a2c9040ada6549c52a6b8d8
@@ -2716,8 +2716,8 @@ package:
     __glibc: '>=2.17,<3.0.a0'
     fmt: '>=12.1.0,<12.2.0a0'
     libgcc: '>=15'
-    libmamba: ==2.9.0,>=2.9.0,<2.10.0a0
-    libmamba-spdlog: ==2.9.0
+    libmamba: 2.9.0,>=2.9.0,<2.10.0a0
+    libmamba-spdlog: 2.9.0
     libstdcxx: '>=15'
     nlohmann_json-abi: 3.12.0
     openssl: '>=3.5.8,<4.0a0'
@@ -3176,7 +3176,7 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libmamba: ==2.9.0,>=2.9.0,<2.10.0a0
+    libmamba: 2.9.0,>=2.9.0,<2.10.0a0
     reproc: '>=14.2.8.post0,<14.3.0a0'
     reproc-cpp: '>=14.2.8.post0,<14.3.0a0'
     zstd: '>=1.5.7,<1.6.0a0'
@@ -3720,7 +3720,7 @@ package:
     __glibc: '>=2.17,<3.0.a0'
     fmt: '>=12.1.0,<12.2.0a0'
     libgcc: '>=15'
-    liblief: ==1.0.0,>=1.0.0,<1.1.0a0
+    liblief: 1.0.0,>=1.0.0,<1.1.0a0
     libstdcxx: '>=15'
     python: ''
     python_abi: 3.12.*
@@ -4438,7 +4438,7 @@ package:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=15'
     libstdcxx: '>=15'
-    reproc: ==14.2.8.post0,>=14.2.8.post0,<14.3.0a0
+    reproc: 14.2.8.post0,>=14.2.8.post0,<14.3.0a0
   url: https://conda.anaconda.org/conda-forge/linux-64/reproc-cpp-14.2.8.post0-h1c70be6_0.conda
   hash:
     md5: 04afaf7b13f8ac3c947230a24d835c94
@@ -4689,7 +4689,7 @@ package:
   manager: conda
   platform: linux-64
   dependencies:
-    setuptools-scm: ==10.3.4
+    setuptools-scm: 10.3.4
   url: https://conda.anaconda.org/conda-forge/noarch/setuptools_scm-10.3.4-hc3fbee1_0.conda
   hash:
     md5: ff9dcd413b3af5336ba346987270535f
@@ -4999,7 +4999,7 @@ package:
   manager: conda
   platform: linux-64
   dependencies:
-    typing_extensions: ==4.16.0
+    typing_extensions: 4.16.0
   url: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.16.0-h69aa097_0.conda
   hash:
     md5: c680b5747e8c4c8f23dca0bb7042a8fc
