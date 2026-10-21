@@ -1,0 +1,26 @@
+{% set version = "1.0.0" %}
+
+package:
+  name: conditional_noarch_pkg
+  version: {{ version }}
+
+source:
+  url: https://example.com/conditional_noarch_pkg-{{ version }}.tar.gz
+  sha256: 54d4259d1bfae24ecdb5ca79f7acc2eac6c286a02d6a0ae617797cb45f0726d3
+
+build:
+  number: 0
+  noarch: python  # [use_noarch]
+
+requirements:
+  host:
+    - python {{ python_min }}  # [use_noarch]
+    - python                   # [not use_noarch]
+  run:
+    - python >={{ python_min }}  # [use_noarch]
+    - python                     # [not use_noarch]
+
+about:
+  home: https://example.com/conditional_noarch_pkg
+  license: BSD-3-Clause
+  summary: A recipe that is only noarch for one variant
