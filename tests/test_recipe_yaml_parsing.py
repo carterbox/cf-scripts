@@ -122,6 +122,53 @@ def test_populate_feedstock_attributes_version_independent_needs_every_variant(
     assert all_noarch(node_attrs, only_python=True) is version_independent
 
 
+@pytest.mark.parametrize("recipe_format", ["meta_yaml", "recipe_yaml"])
+@pytest.mark.parametrize(
+    "use_noarch_per_variant,is_noarch",
+    [
+        (["True"], True),
+        (["True", "False"], False),
+        (["False", "True"], False),
+        (["False", "False"], False),
+    ],
+)
+def test_populate_feedstock_attributes_noarch_needs_every_variant(
+    use_noarch_per_variant, is_noarch, recipe_format
+):
+    """A recipe is only noarch if every variant is.
+
+    Recipes like cython build `noarch: python  # [use_noarch]` for one variant
+    and compiled packages for the rest. Reporting the feedstock as noarch overall
+    would take it out of the python migrations it still needs.
+    """
+    if recipe_format == "meta_yaml":
+        recipe = TEST_META_YAML_PATH / "conditional_noarch_pkg.yaml"
+        recipe_name = "meta.yaml"
+    else:
+        recipe = TEST_RECIPE_YAML_PATH / "conditional_noarch_pkg.yaml"
+        recipe_name = "recipe.yaml"
+
+    with TemporaryDirectory() as tmpdir:
+        os.makedirs(Path(tmpdir) / "recipe", exist_ok=True)
+        os.makedirs(Path(tmpdir) / ".ci_support", exist_ok=True)
+        shutil.copy2(recipe, Path(tmpdir) / "recipe" / recipe_name)
+        for i, use_noarch in enumerate(use_noarch_per_variant):
+            (Path(tmpdir) / ".ci_support" / f"linux_64_v{i}.yaml").write_text(
+                "target_platform:\n - 'linux-64'\n"
+                f"use_noarch:\n - {use_noarch}\n"
+                "python_min:\n - '3.10'\n"
+            )
+        node_attrs = populate_feedstock_attributes(
+            "conditional_noarch_pkg",
+            {},
+            feedstock_dir=tmpdir,
+            **{recipe_format: recipe.read_text()},
+        )
+
+    assert ("noarch" in node_attrs["meta_yaml"]["build"]) is is_noarch
+    assert all_noarch(node_attrs, only_python=True) is is_noarch
+
+
 def test_process_recipe_for_pinning():
     input_recipes = [
         {

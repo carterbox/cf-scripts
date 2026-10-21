@@ -87,6 +87,13 @@ def _set_version_independent(meta_yaml, version_independent: bool) -> None:
             del build["python"]
 
 
+def _noarch_differs_between_variants(variant_yamls: list[typing.Any]) -> bool:
+    """Whether some rendered variants are noarch and others are not (or differ)."""
+    return (
+        len({(varyml.get("build") or {}).get("noarch") for varyml in variant_yamls}) > 1
+    )
+
+
 def _dedupe_meta_yaml(meta_yaml):
     """Deduplicate a meta.yaml dict recursively."""
     if isinstance(meta_yaml, dict):
@@ -371,6 +378,7 @@ def populate_feedstock_attributes(
     saved_cbc_key = None
     saved_cbc_value = None
     version_independent = None
+    noarch_differs = False
 
     try:
         if (
@@ -453,6 +461,12 @@ def populate_feedstock_attributes(
                     _is_version_independent(varyml) for varyml in variant_yamls
                 )
 
+                # likewise for `build.noarch`: recipes that only conditionally
+                # build a noarch package (e.g. `noarch: python  # [use_noarch]`)
+                # also build compiled packages, and collapsing would keep the
+                # `noarch` of whichever variant comes first.
+                noarch_differs = _noarch_differs_between_variants(variant_yamls)
+
                 # collapse them down
                 logger.debug("collapsing reqs for %s", name)
                 final_cfgs: dict = {}
@@ -514,6 +528,9 @@ def populate_feedstock_attributes(
 
     if version_independent is not None:
         _set_version_independent(meta_yaml, version_independent)
+
+    if noarch_differs:
+        (meta_yaml.get("build") or {}).pop("noarch", None)
 
     # remove all plat-arch specific keys to remove old ones if a combination is disabled
     for k in list(node_attrs.keys()):
