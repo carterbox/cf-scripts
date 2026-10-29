@@ -464,13 +464,6 @@ def cuda_win_arm64_yaml(tmp_path, monkeypatch):
     [
         ({"requirements": {"build": {"cuda_compiler_stub"}}}, False),
         ({"requirements": {"build": {"c_compiler_stub"}}}, True),
-        (
-            {
-                "requirements": {"build": {"cuda_compiler_stub"}},
-                "win_64_requirements": {"build": {"c_compiler_stub"}},
-            },
-            True,
-        ),
     ],
 )
 def test_cuda_win_arm64_filter(cuda_win_arm64_yaml, attrs, expected):

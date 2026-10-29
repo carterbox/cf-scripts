@@ -601,7 +601,7 @@ class CrossCompilationForARMAndPower(MiniMigrator):
 class CudaWinArm64Migrator(MiniMigrator):
     """Copy the CUDA on Windows on ARM migration into feedstocks that use CUDA.
 
-    The migration yaml lives (paused) in conda-forge-pinning. This piggybacks on
+    The migration yaml lives in conda-forge-pinning. This piggybacks on
     the win-arm64 migration so that CUDA feedstocks get both in one PR.
 
     This is a no-op if the installed conda-forge-pinning does not have the
@@ -623,10 +623,10 @@ class CudaWinArm64Migrator(MiniMigrator):
         )
 
     def filter(self, attrs: "AttrsTypedDict", not_bad_str_start: str = "") -> bool:
-        reqs = attrs.get("win_64_requirements", attrs.get("requirements", {}))
-        if super().filter(attrs) or "cuda_compiler_stub" not in reqs.get(
-            "build", set()
-        ):
+        # This migrator only runs as a piggyback to a WinArm64 PR, so which feedstocks get
+        # migrated is up to that migrator; we only check whether it uses CUDA on any platform.
+        build_reqs = attrs.get("requirements", {}).get("build", set())
+        if super().filter(attrs) or "cuda_compiler_stub" not in build_reqs:
             return True
         if not os.path.exists(self.migration_yaml):
             logger.warning("could not find migration %s", self.migration_yaml)
