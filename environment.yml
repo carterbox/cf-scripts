@@ -39,7 +39,7 @@ dependencies:
   - pip >=26.2.2
   - pixi >=0.82.1
   - psutil
-  - py-rattler>=0.22.0,<0.26.0a0
+  - py-rattler>=0.28.0,<0.29.0a0
   - pydantic >=2.13
   - pydantic-extra-types
   - pydantic-settings >=2.15
@@ -62,7 +62,7 @@ dependencies:
   - wget
   - wurlitzer
   # build
-  - python=3.12
+  - python=3.14
   - pip
   - python-build
   - setuptools_scm >=8
